@@ -28,5 +28,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         {
             this.Close();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            frmcolas colasform = new frmcolas();
+            colasform.Show();
+        }
     }
 }

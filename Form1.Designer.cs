@@ -31,7 +31,7 @@
             panel1 = new Panel();
             button9 = new Button();
             label4 = new Label();
-            button8 = new Button();
+            btnFormColas = new Button();
             label3 = new Label();
             label2 = new Label();
             btnPilas = new Button();
@@ -41,10 +41,10 @@
             button3 = new Button();
             button2 = new Button();
             panel3 = new Panel();
+            button1 = new Button();
             button7 = new Button();
             button6 = new Button();
             label1 = new Label();
-            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -54,7 +54,7 @@
             // 
             panel1.Controls.Add(button9);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(button8);
+            panel1.Controls.Add(btnFormColas);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(btnPilas);
@@ -86,18 +86,19 @@
             label4.TabIndex = 6;
             label4.Text = "Formulario Colas Enlazadas";
             // 
-            // button8
+            // btnFormColas
             // 
-            button8.BackColor = Color.DarkCyan;
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.ForeColor = SystemColors.ActiveCaptionText;
-            button8.Location = new Point(139, 341);
-            button8.Name = "button8";
-            button8.Size = new Size(94, 29);
-            button8.TabIndex = 5;
-            button8.Text = "Iniciar";
-            button8.UseVisualStyleBackColor = false;
+            btnFormColas.BackColor = Color.DarkCyan;
+            btnFormColas.FlatAppearance.BorderSize = 0;
+            btnFormColas.FlatStyle = FlatStyle.Flat;
+            btnFormColas.ForeColor = SystemColors.ActiveCaptionText;
+            btnFormColas.Location = new Point(139, 341);
+            btnFormColas.Name = "btnFormColas";
+            btnFormColas.Size = new Size(94, 29);
+            btnFormColas.TabIndex = 5;
+            btnFormColas.Text = "Iniciar";
+            btnFormColas.UseVisualStyleBackColor = false;
+            btnFormColas.Click += button8_Click;
             // 
             // label3
             // 
@@ -190,6 +191,15 @@
             panel3.Size = new Size(417, 852);
             panel3.TabIndex = 1;
             // 
+            // button1
+            // 
+            button1.Location = new Point(161, 412);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 3;
+            button1.Text = "Iniciar";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // button7
             // 
             button7.Location = new Point(176, 805);
@@ -220,15 +230,6 @@
             label1.Size = new Size(490, 39);
             label1.TabIndex = 2;
             label1.Text = "Sistema de Inventario - Café de Altura";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(161, 412);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 3;
-            button1.Text = "Iniciar";
-            button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -266,7 +267,7 @@
         private Label label1;
         private Label label2;
         private Label label4;
-        private Button button8;
+        private Button btnFormColas;
         private Label label3;
         private Button button9;
         private Button button1;

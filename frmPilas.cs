@@ -34,7 +34,7 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                 txtcodigo.Text,
                 textproducto.Text,
                 txtdescripcion.Text,
-                cbcategoria.SelectedValue,
+                cbcategoria.Text,
                 dtpfechaingreso.Value,
                 dtpfechavencimiento.Value,
                 Convert.ToDecimal(txtpreciocompra.Text),
