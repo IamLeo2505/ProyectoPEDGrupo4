@@ -272,7 +272,6 @@
             // 
             cbcategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cbcategoria.FormattingEnabled = true;
-            cbcategoria.Items.AddRange(new object[] { "Bolsa 1 Lb", "Bolsa 2 Lb", "Paquete", "Vaso" });
             cbcategoria.Location = new Point(1038, 109);
             cbcategoria.Margin = new Padding(3, 2, 3, 2);
             cbcategoria.Name = "cbcategoria";

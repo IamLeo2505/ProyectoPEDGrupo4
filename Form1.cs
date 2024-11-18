@@ -28,5 +28,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         {
             this.Close();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            FormColaCircular ColaCircularForm = new FormColaCircular();
+            ColaCircularForm.Show();
+        }
     }
 }
