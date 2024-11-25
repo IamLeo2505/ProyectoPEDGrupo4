@@ -36,6 +36,8 @@
             label2 = new Label();
             btnPilas = new Button();
             panel2 = new Panel();
+            label5 = new Label();
+            button10 = new Button();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
@@ -141,6 +143,8 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(button10);
             panel2.Controls.Add(button5);
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
@@ -150,6 +154,25 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(671, 639);
             panel2.TabIndex = 1;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(26, 65);
+            label5.Name = "label5";
+            label5.Size = new Size(339, 15);
+            label5.TabIndex = 6;
+            label5.Text = "Temporalmente (hasta que lo quite) te llevara al FormQuicksort";
+            // 
+            // button10
+            // 
+            button10.Location = new Point(159, 98);
+            button10.Name = "button10";
+            button10.Size = new Size(75, 23);
+            button10.TabIndex = 5;
+            button10.Text = "button10";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button5
             // 
@@ -261,6 +284,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             panel3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -285,5 +309,7 @@
         private Label label3;
         private Button button9;
         private Button button1;
+        private Label label5;
+        private Button button10;
     }
 }

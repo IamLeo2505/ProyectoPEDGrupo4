@@ -34,5 +34,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             FormColaCircular ColaCircularForm = new FormColaCircular();
             ColaCircularForm.Show();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            FormQuicksort QuicksortForm = new FormQuicksort();
+            QuicksortForm.Show();
+        }
     }
 }
