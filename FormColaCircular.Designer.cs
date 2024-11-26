@@ -58,6 +58,7 @@
             btnVerInicio = new Button();
             btnVerFinal = new Button();
             btnEliminar = new Button();
+            btnCancelar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvProducto).BeginInit();
             SuspendLayout();
             // 
@@ -318,11 +319,22 @@
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Click += btnEliminar_Click;
             // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(1283, 637);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(75, 23);
+            btnCancelar.TabIndex = 75;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
             // FormColaCircular
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 622);
+            ClientSize = new Size(1370, 670);
+            Controls.Add(btnCancelar);
             Controls.Add(btnEliminar);
             Controls.Add(btnVerFinal);
             Controls.Add(btnVerInicio);
@@ -384,5 +396,6 @@
         private Button btnVerInicio;
         private Button btnVerFinal;
         private Button btnEliminar;
+        private Button btnCancelar;
     }
 }

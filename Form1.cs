@@ -40,5 +40,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             FormQuicksort QuicksortForm = new FormQuicksort();
             QuicksortForm.Show();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            FormListaSimple ListaSimpleForm = new FormListaSimple();
+            ListaSimpleForm.Show();
+        }
     }
 }

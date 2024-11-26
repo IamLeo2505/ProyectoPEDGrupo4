@@ -47,6 +47,8 @@
             button7 = new Button();
             button6 = new Button();
             label1 = new Label();
+            button11 = new Button();
+            label6 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -143,6 +145,8 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(button11);
+            panel2.Controls.Add(label6);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(button10);
             panel2.Controls.Add(button5);
@@ -267,6 +271,25 @@
             label1.TabIndex = 2;
             label1.Text = "Sistema de Inventario - Café de Altura";
             // 
+            // button11
+            // 
+            button11.Location = new Point(159, 191);
+            button11.Name = "button11";
+            button11.Size = new Size(75, 23);
+            button11.TabIndex = 7;
+            button11.Text = "button11";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(26, 161);
+            label6.Name = "label6";
+            label6.Size = new Size(348, 15);
+            label6.TabIndex = 6;
+            label6.Text = "Temporalmente (hasta que lo quite) te llevara al FormListaSimple";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -311,5 +334,7 @@
         private Button button1;
         private Label label5;
         private Button button10;
+        private Button button11;
+        private Label label6;
     }
 }

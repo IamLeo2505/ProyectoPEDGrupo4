@@ -24,6 +24,10 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         private void frmPilas_Load(object sender, EventArgs e)
         {
             this.txtcodigo.Focus();
+            cbcategoria.Items.Add("Bolsa 1 Lb");
+            cbcategoria.Items.Add("Bolsa 2 Lb");
+            cbcategoria.Items.Add("Paquete");
+            cbcategoria.Items.Add("Vaso");
         }
 
         private void btnAñadir_Click(object sender, EventArgs e)
