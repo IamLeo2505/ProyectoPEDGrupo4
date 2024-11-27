@@ -36,8 +36,8 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             if (string.IsNullOrWhiteSpace(txtcodigo.Text) ||
                 string.IsNullOrWhiteSpace(txtproducto.Text) ||
                 string.IsNullOrWhiteSpace(txtdescripcion.Text) ||
-                string.IsNullOrWhiteSpace(txtpreciocompra.Text) ||
                 string.IsNullOrWhiteSpace(txtprecioventa.Text) ||
+                string.IsNullOrWhiteSpace(txtpreciocompra.Text) ||
                 cbcategoria.SelectedItem == null)
             {
                 // Mostrar mensaje de advertencia si hay algún campo vacío
@@ -56,8 +56,8 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                         cbcategoria.SelectedItem.ToString(),
                         dtpfechaingreso.Value,
                         dtpfechavencimiento.Value,
-                        Convert.ToDecimal(txtpreciocompra.Text),
-                        Convert.ToDecimal(txtprecioventa.Text)
+                        Convert.ToDecimal(txtprecioventa.Text),
+                        Convert.ToDecimal(txtpreciocompra.Text)
                     );
                     colaProductos.Añadir(nuevoProducto);
                     MessageBox.Show($"{nuevoProducto.NombreProducto} añadido a la cola.");
@@ -134,6 +134,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormColaCircular_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

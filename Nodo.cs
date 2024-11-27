@@ -12,10 +12,19 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         public Nodo Siguiente { get; set; } // Referencia al siguiente nodo
 
         // Constructor
-        public Nodo(ProductoColasCirculares producto)
+        public Nodo(string text, ProductoColasCirculares producto)
         {
             Producto = producto;
             Siguiente = null;
+        }
+
+        public Nodo(string text1, string text2, string text3, string text4, DateTime value1, DateTime value2, decimal v1, decimal v2)
+        {
+        }
+
+        public Nodo(ProductoColasCirculares producto)
+        {
+            Producto = producto;
         }
     }
 

@@ -41,10 +41,31 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             QuicksortForm.Show();
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e, FormListaSimple ListaSimpleForm)
         {
-            FormListaSimple ListaSimpleForm = new FormListaSimple();
             ListaSimpleForm.Show();
+        }
+
+        private void btncolas_Click(object sender, EventArgs e)
+        {
+            frmcolas ColaForm = new frmcolas();
+            ColaForm.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnlistaenlazada_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnlistaenlazada_Click_1(object sender, EventArgs e)
+        {
+            FormListaDoble listaDoble = new FormListaDoble();
+            listaDoble.Show();
         }
     }
 }

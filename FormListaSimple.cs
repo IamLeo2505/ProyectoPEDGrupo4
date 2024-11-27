@@ -147,5 +147,10 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
             ActualizarDataGridView(resultados);
         }
+
+        private void FormListaSimple_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
