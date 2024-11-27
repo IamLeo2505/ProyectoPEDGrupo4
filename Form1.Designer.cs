@@ -36,22 +36,24 @@
             label2 = new Label();
             btnPilas = new Button();
             panel2 = new Panel();
+            label11 = new Label();
+            label10 = new Label();
+            label8 = new Label();
             label5 = new Label();
+            label9 = new Label();
             button10 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
+            label6 = new Label();
+            button11 = new Button();
+            label7 = new Label();
             panel3 = new Panel();
-            button1 = new Button();
-            button7 = new Button();
             button6 = new Button();
             label1 = new Label();
-            button11 = new Button();
-            label6 = new Label();
+            panel4 = new Panel();
+            label12 = new Label();
+            panel5 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            panel3.SuspendLayout();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -65,7 +67,7 @@
             panel1.Location = new Point(23, 71);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(365, 639);
+            panel1.Size = new Size(329, 323);
             panel1.TabIndex = 0;
             // 
             // button9
@@ -74,7 +76,7 @@
             button9.FlatAppearance.BorderSize = 0;
             button9.FlatStyle = FlatStyle.Flat;
             button9.ForeColor = SystemColors.ActiveCaptionText;
-            button9.Location = new Point(122, 454);
+            button9.Location = new Point(122, 274);
             button9.Margin = new Padding(3, 2, 3, 2);
             button9.Name = "button9";
             button9.Size = new Size(82, 22);
@@ -87,11 +89,11 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Perpetua", 20F);
-            label4.Location = new Point(32, 409);
+            label4.Location = new Point(32, 229);
             label4.Name = "label4";
-            label4.Size = new Size(278, 31);
+            label4.Size = new Size(262, 31);
             label4.TabIndex = 6;
-            label4.Text = "Formulario Colas Enlazadas";
+            label4.Text = "Formulario Cola Enlazada";
             // 
             // button8
             // 
@@ -99,7 +101,7 @@
             button8.FlatAppearance.BorderSize = 0;
             button8.FlatStyle = FlatStyle.Flat;
             button8.ForeColor = SystemColors.ActiveCaptionText;
-            button8.Location = new Point(122, 256);
+            button8.Location = new Point(122, 177);
             button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
             button8.Size = new Size(82, 22);
@@ -111,11 +113,11 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Perpetua", 20F);
-            label3.Location = new Point(67, 217);
+            label3.Location = new Point(67, 138);
             label3.Name = "label3";
-            label3.Size = new Size(180, 31);
+            label3.Size = new Size(172, 31);
             label3.TabIndex = 4;
-            label3.Text = "Formulario Colas";
+            label3.Text = "Formulario Cola";
             // 
             // label2
             // 
@@ -123,9 +125,9 @@
             label2.Font = new Font("Perpetua", 20F);
             label2.Location = new Point(78, 31);
             label2.Name = "label2";
-            label2.Size = new Size(171, 31);
+            label2.Size = new Size(163, 31);
             label2.TabIndex = 3;
-            label2.Text = "Formulario Pilas";
+            label2.Text = "Formulario Pila";
             label2.Click += label2_Click;
             // 
             // btnPilas
@@ -145,108 +147,130 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(button11);
-            panel2.Controls.Add(label6);
+            panel2.Controls.Add(label11);
+            panel2.Controls.Add(label10);
+            panel2.Controls.Add(label8);
             panel2.Controls.Add(label5);
+            panel2.Controls.Add(label9);
             panel2.Controls.Add(button10);
-            panel2.Controls.Add(button5);
-            panel2.Controls.Add(button4);
-            panel2.Controls.Add(button3);
-            panel2.Controls.Add(button2);
-            panel2.Location = new Point(469, 71);
+            panel2.Controls.Add(label6);
+            panel2.Location = new Point(371, 71);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(671, 639);
+            panel2.Size = new Size(671, 323);
             panel2.TabIndex = 1;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Perpetua", 20F);
+            label11.Location = new Point(329, 231);
+            label11.Name = "label11";
+            label11.Size = new Size(210, 31);
+            label11.TabIndex = 3;
+            label11.Text = "Formulario Shellsort";
+            label11.Click += label2_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Perpetua", 20F);
+            label10.Location = new Point(329, 32);
+            label10.Name = "label10";
+            label10.Size = new Size(251, 31);
+            label10.TabIndex = 3;
+            label10.Text = "Formulario Selectionsort";
+            label10.Click += label2_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Perpetua", 20F);
+            label8.Location = new Point(36, 231);
+            label8.Name = "label8";
+            label8.Size = new Size(215, 31);
+            label8.TabIndex = 3;
+            label8.Text = "Formulario Heapsort";
+            label8.Click += label2_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(26, 65);
+            label5.Font = new Font("Perpetua", 20F);
+            label5.Location = new Point(36, 32);
             label5.Name = "label5";
-            label5.Size = new Size(339, 15);
-            label5.TabIndex = 6;
-            label5.Text = "Temporalmente (hasta que lo quite) te llevara al FormQuicksort";
+            label5.Size = new Size(231, 31);
+            label5.TabIndex = 3;
+            label5.Text = "Formulario Bubblesort";
+            label5.Click += label2_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Perpetua", 20F);
+            label9.Location = new Point(330, 133);
+            label9.Name = "label9";
+            label9.Size = new Size(220, 31);
+            label9.TabIndex = 3;
+            label9.Text = "Formulario Shakesort";
+            label9.Click += label2_Click;
             // 
             // button10
             // 
-            button10.Location = new Point(159, 98);
+            button10.BackColor = Color.DarkCyan;
+            button10.FlatStyle = FlatStyle.Flat;
+            button10.ForeColor = SystemColors.ActiveCaptionText;
+            button10.Location = new Point(115, 175);
+            button10.Margin = new Padding(3, 2, 3, 2);
             button10.Name = "button10";
             button10.Size = new Size(75, 23);
             button10.TabIndex = 5;
-            button10.Text = "button10";
-            button10.UseVisualStyleBackColor = true;
+            button10.Text = "Iniciar";
+            button10.UseVisualStyleBackColor = false;
             button10.Click += button10_Click;
             // 
-            // button5
+            // label6
             // 
-            button5.Location = new Point(481, 604);
-            button5.Margin = new Padding(3, 2, 3, 2);
-            button5.Name = "button5";
-            button5.Size = new Size(82, 22);
-            button5.TabIndex = 4;
-            button5.Text = "Iniciar";
-            button5.UseVisualStyleBackColor = true;
+            label6.AutoSize = true;
+            label6.Font = new Font("Perpetua", 20F);
+            label6.Location = new Point(37, 133);
+            label6.Name = "label6";
+            label6.Size = new Size(223, 31);
+            label6.TabIndex = 3;
+            label6.Text = "Formulario Quicksort";
+            label6.Click += label2_Click;
             // 
-            // button4
+            // button11
             // 
-            button4.Location = new Point(114, 604);
-            button4.Margin = new Padding(3, 2, 3, 2);
-            button4.Name = "button4";
-            button4.Size = new Size(82, 22);
-            button4.TabIndex = 3;
-            button4.Text = "Iniciar";
-            button4.UseVisualStyleBackColor = true;
+            button11.BackColor = Color.DarkCyan;
+            button11.FlatStyle = FlatStyle.Flat;
+            button11.ForeColor = SystemColors.ActiveCaptionText;
+            button11.Location = new Point(122, 85);
+            button11.Name = "button11";
+            button11.Size = new Size(75, 23);
+            button11.TabIndex = 7;
+            button11.Text = "Iniciar";
+            button11.UseVisualStyleBackColor = false;
+            button11.Click += button11_Click;
             // 
-            // button3
+            // label7
             // 
-            button3.Location = new Point(481, 283);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(82, 22);
-            button3.TabIndex = 2;
-            button3.Text = "Iniciar";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(124, 283);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.Size = new Size(82, 22);
-            button2.TabIndex = 1;
-            button2.Text = "Iniciar";
-            button2.UseVisualStyleBackColor = true;
+            label7.AutoSize = true;
+            label7.Font = new Font("Perpetua", 20F);
+            label7.Location = new Point(44, 36);
+            label7.Name = "label7";
+            label7.Size = new Size(244, 31);
+            label7.TabIndex = 3;
+            label7.Text = "Formulario Lista Simple";
+            label7.Click += label2_Click;
             // 
             // panel3
             // 
-            panel3.Controls.Add(button1);
-            panel3.Controls.Add(button7);
-            panel3.Location = new Point(1225, 71);
+            panel3.Location = new Point(1060, 71);
             panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(365, 639);
+            panel3.Size = new Size(285, 657);
             panel3.TabIndex = 1;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(141, 309);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(82, 22);
-            button1.TabIndex = 3;
-            button1.Text = "Iniciar";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.Location = new Point(154, 604);
-            button7.Margin = new Padding(3, 2, 3, 2);
-            button7.Name = "button7";
-            button7.Size = new Size(82, 22);
-            button7.TabIndex = 2;
-            button7.Text = "Iniciar";
-            button7.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -271,35 +295,48 @@
             label1.TabIndex = 2;
             label1.Text = "Sistema de Inventario - Café de Altura";
             // 
-            // button11
+            // panel4
             // 
-            button11.Location = new Point(159, 191);
-            button11.Name = "button11";
-            button11.Size = new Size(75, 23);
-            button11.TabIndex = 7;
-            button11.Text = "button11";
-            button11.UseVisualStyleBackColor = true;
-            button11.Click += button11_Click;
+            panel4.Controls.Add(button11);
+            panel4.Controls.Add(label12);
+            panel4.Controls.Add(label7);
+            panel4.Location = new Point(23, 413);
+            panel4.Margin = new Padding(3, 2, 3, 2);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(329, 267);
+            panel4.TabIndex = 0;
             // 
-            // label6
+            // label12
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(26, 161);
-            label6.Name = "label6";
-            label6.Size = new Size(348, 15);
-            label6.TabIndex = 6;
-            label6.Text = "Temporalmente (hasta que lo quite) te llevara al FormListaSimple";
+            label12.AutoSize = true;
+            label12.Font = new Font("Perpetua", 20F);
+            label12.Location = new Point(44, 150);
+            label12.Name = "label12";
+            label12.Size = new Size(238, 31);
+            label12.TabIndex = 3;
+            label12.Text = "Formulario Lista Doble";
+            label12.Click += label2_Click;
+            // 
+            // panel5
+            // 
+            panel5.Location = new Point(371, 413);
+            panel5.Margin = new Padding(3, 2, 3, 2);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(671, 315);
+            panel5.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumTurquoise;
-            ClientSize = new Size(1199, 562);
+            ClientSize = new Size(1370, 749);
             Controls.Add(label1);
+            Controls.Add(panel5);
             Controls.Add(panel3);
             Controls.Add(button6);
             Controls.Add(panel2);
+            Controls.Add(panel4);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
@@ -308,7 +345,8 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            panel3.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -318,12 +356,7 @@
         private Panel panel1;
         private Button btnPilas;
         private Panel panel2;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
         private Panel panel3;
-        private Button button7;
         private Button button6;
         private Label label1;
         private Label label2;
@@ -331,10 +364,17 @@
         private Button button8;
         private Label label3;
         private Button button9;
-        private Button button1;
-        private Label label5;
         private Button button10;
         private Button button11;
         private Label label6;
+        private Label label7;
+        private Label label11;
+        private Label label10;
+        private Label label8;
+        private Label label5;
+        private Label label9;
+        private Panel panel4;
+        private Label label12;
+        private Panel panel5;
     }
 }
