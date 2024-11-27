@@ -68,7 +68,11 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Perpetua", 16.2F);
+<<<<<<< Updated upstream
             label1.Location = new Point(32, 124);
+=======
+            label1.Location = new Point(36, 118);
+>>>>>>> Stashed changes
             label1.Name = "label1";
             label1.Size = new Size(133, 25);
             label1.TabIndex = 0;
@@ -78,7 +82,11 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Perpetua", 16.2F);
+<<<<<<< Updated upstream
             label2.Location = new Point(317, 124);
+=======
+            label2.Location = new Point(362, 118);
+>>>>>>> Stashed changes
             label2.Name = "label2";
             label2.Size = new Size(187, 25);
             label2.TabIndex = 1;
@@ -88,7 +96,11 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Perpetua", 16.2F);
+<<<<<<< Updated upstream
             label3.Location = new Point(782, 124);
+=======
+            label3.Location = new Point(894, 118);
+>>>>>>> Stashed changes
             label3.Name = "label3";
             label3.Size = new Size(107, 25);
             label3.TabIndex = 2;
@@ -98,7 +110,11 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Perpetua", 16.2F);
+<<<<<<< Updated upstream
             label4.Location = new Point(318, 272);
+=======
+            label4.Location = new Point(359, 272);
+>>>>>>> Stashed changes
             label4.Name = "label4";
             label4.Size = new Size(187, 25);
             label4.TabIndex = 3;
@@ -108,7 +124,11 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Perpetua", 16.2F);
+<<<<<<< Updated upstream
             label5.Location = new Point(32, 272);
+=======
+            label5.Location = new Point(31, 272);
+>>>>>>> Stashed changes
             label5.Name = "label5";
             label5.Size = new Size(145, 25);
             label5.TabIndex = 4;
@@ -118,8 +138,13 @@
             // 
             cbcategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cbcategoria.FormattingEnabled = true;
+<<<<<<< Updated upstream
             cbcategoria.Location = new Point(1255, 150);
             cbcategoria.Margin = new Padding(3, 2, 3, 2);
+=======
+            cbcategoria.Items.AddRange(new object[] { "Bolsa 1 Lb", "Bolsa 2 Lb", "Paquete", "Vaso" });
+            cbcategoria.Location = new Point(1434, 152);
+>>>>>>> Stashed changes
             cbcategoria.Name = "cbcategoria";
             cbcategoria.Size = new Size(247, 23);
             cbcategoria.TabIndex = 5;
@@ -128,7 +153,11 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Perpetua", 16.2F);
+<<<<<<< Updated upstream
             label6.Location = new Point(1255, 124);
+=======
+            label6.Location = new Point(1434, 118);
+>>>>>>> Stashed changes
             label6.Name = "label6";
             label6.Size = new Size(89, 25);
             label6.TabIndex = 6;
@@ -138,7 +167,11 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Perpetua", 16.2F);
+<<<<<<< Updated upstream
             label7.Location = new Point(1027, 272);
+=======
+            label7.Location = new Point(1169, 272);
+>>>>>>> Stashed changes
             label7.Name = "label7";
             label7.Size = new Size(138, 25);
             label7.TabIndex = 7;
@@ -148,7 +181,11 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Perpetua", 16.2F);
+<<<<<<< Updated upstream
             label8.Location = new Point(782, 272);
+=======
+            label8.Location = new Point(889, 272);
+>>>>>>> Stashed changes
             label8.Name = "label8";
             label8.Size = new Size(158, 25);
             label8.TabIndex = 8;
@@ -166,16 +203,24 @@
             // 
             // txtcodigo
             // 
+<<<<<<< Updated upstream
             txtcodigo.Location = new Point(32, 150);
             txtcodigo.Margin = new Padding(3, 2, 3, 2);
+=======
+            txtcodigo.Location = new Point(36, 153);
+>>>>>>> Stashed changes
             txtcodigo.Name = "txtcodigo";
             txtcodigo.Size = new Size(160, 23);
             txtcodigo.TabIndex = 10;
             // 
             // txtdescripcion
             // 
+<<<<<<< Updated upstream
             txtdescripcion.Location = new Point(782, 150);
             txtdescripcion.Margin = new Padding(3, 2, 3, 2);
+=======
+            txtdescripcion.Location = new Point(894, 153);
+>>>>>>> Stashed changes
             txtdescripcion.Name = "txtdescripcion";
             txtdescripcion.Size = new Size(383, 23);
             txtdescripcion.TabIndex = 11;
@@ -194,16 +239,24 @@
             // 
             // txtprecioventa
             // 
+<<<<<<< Updated upstream
             txtprecioventa.Location = new Point(782, 305);
             txtprecioventa.Margin = new Padding(3, 2, 3, 2);
+=======
+            txtprecioventa.Location = new Point(889, 316);
+>>>>>>> Stashed changes
             txtprecioventa.Name = "txtprecioventa";
             txtprecioventa.Size = new Size(174, 23);
             txtprecioventa.TabIndex = 15;
             // 
             // txtpreciocompra
             // 
+<<<<<<< Updated upstream
             txtpreciocompra.Location = new Point(1027, 305);
             txtpreciocompra.Margin = new Padding(3, 2, 3, 2);
+=======
+            txtpreciocompra.Location = new Point(1169, 316);
+>>>>>>> Stashed changes
             txtpreciocompra.Name = "txtpreciocompra";
             txtpreciocompra.Size = new Size(159, 23);
             txtpreciocompra.TabIndex = 16;
@@ -320,24 +373,36 @@
             // 
             // dtpfechaingreso
             // 
+<<<<<<< Updated upstream
             dtpfechaingreso.Location = new Point(32, 305);
             dtpfechaingreso.Margin = new Padding(3, 2, 3, 2);
+=======
+            dtpfechaingreso.Location = new Point(31, 316);
+>>>>>>> Stashed changes
             dtpfechaingreso.Name = "dtpfechaingreso";
             dtpfechaingreso.Size = new Size(261, 23);
             dtpfechaingreso.TabIndex = 24;
             // 
             // dtpfechavencimiento
             // 
+<<<<<<< Updated upstream
             dtpfechavencimiento.Location = new Point(317, 305);
             dtpfechavencimiento.Margin = new Padding(3, 2, 3, 2);
+=======
+            dtpfechavencimiento.Location = new Point(357, 316);
+>>>>>>> Stashed changes
             dtpfechavencimiento.Name = "dtpfechavencimiento";
             dtpfechavencimiento.Size = new Size(267, 23);
             dtpfechavencimiento.TabIndex = 25;
             // 
             // textproducto
             // 
+<<<<<<< Updated upstream
             textproducto.Location = new Point(318, 150);
             textproducto.Margin = new Padding(3, 2, 3, 2);
+=======
+            textproducto.Location = new Point(364, 153);
+>>>>>>> Stashed changes
             textproducto.Name = "textproducto";
             textproducto.Size = new Size(288, 23);
             textproducto.TabIndex = 26;

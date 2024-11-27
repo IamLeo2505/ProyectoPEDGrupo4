@@ -1,6 +1,7 @@
 ﻿namespace ProyectoFinalEstructuraDatosGrupo4
 {
     partial class Form1
+    partial class InterfazPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,14 +30,19 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+<<<<<<< Updated upstream
             btncolas = new Button();
             btncolasenl = new Button();
+=======
+            btnColaCircular = new Button();
+>>>>>>> Stashed changes
             label4 = new Label();
             btnFormColas = new Button();
             label3 = new Label();
             label2 = new Label();
             btnPilas = new Button();
             panel2 = new Panel();
+<<<<<<< Updated upstream
             label7 = new Label();
             button11 = new Button();
             label6 = new Label();
@@ -46,6 +52,13 @@
             button4 = new Button();
             button3 = new Button();
             btnlistaenlazada = new Button();
+=======
+            btnLD = new Button();
+            label5 = new Label();
+            button5 = new Button();
+            button4 = new Button();
+            button3 = new Button();
+>>>>>>> Stashed changes
             panel3 = new Panel();
             button1 = new Button();
             button7 = new Button();
@@ -58,8 +71,12 @@
             // 
             // panel1
             // 
+<<<<<<< Updated upstream
             panel1.Controls.Add(btncolas);
             panel1.Controls.Add(btncolasenl);
+=======
+            panel1.Controls.Add(btnColaCircular);
+>>>>>>> Stashed changes
             panel1.Controls.Add(label4);
             panel1.Controls.Add(btnFormColas);
             panel1.Controls.Add(label3);
@@ -70,6 +87,7 @@
             panel1.Size = new Size(417, 852);
             panel1.TabIndex = 0;
             // 
+<<<<<<< Updated upstream
             // btncolas
             // 
             btncolas.BackColor = Color.DarkCyan;
@@ -97,6 +115,21 @@
             btncolasenl.Text = "Iniciar";
             btncolasenl.UseVisualStyleBackColor = false;
             btncolasenl.Click += button9_Click;
+=======
+            // btnColaCircular
+            // 
+            btnColaCircular.BackColor = Color.DarkCyan;
+            btnColaCircular.FlatAppearance.BorderSize = 0;
+            btnColaCircular.FlatStyle = FlatStyle.Flat;
+            btnColaCircular.ForeColor = SystemColors.ActiveCaptionText;
+            btnColaCircular.Location = new Point(139, 605);
+            btnColaCircular.Name = "btnColaCircular";
+            btnColaCircular.Size = new Size(94, 29);
+            btnColaCircular.TabIndex = 7;
+            btnColaCircular.Text = "Iniciar";
+            btnColaCircular.UseVisualStyleBackColor = false;
+            btnColaCircular.Click += btnColaCircular_Click;
+>>>>>>> Stashed changes
             // 
             // label4
             // 
@@ -107,7 +140,10 @@
             label4.Size = new Size(368, 39);
             label4.TabIndex = 6;
             label4.Text = "Formulario Colas Circulares";
+<<<<<<< Updated upstream
             label4.Click += label4_Click;
+=======
+>>>>>>> Stashed changes
             // 
             // btnFormColas
             // 
@@ -154,6 +190,7 @@
             // 
             // panel2
             // 
+<<<<<<< Updated upstream
             panel2.Controls.Add(label7);
             panel2.Controls.Add(button11);
             panel2.Controls.Add(label6);
@@ -163,11 +200,19 @@
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
             panel2.Controls.Add(btnlistaenlazada);
+=======
+            panel2.Controls.Add(btnLD);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(button5);
+            panel2.Controls.Add(button4);
+            panel2.Controls.Add(button3);
+>>>>>>> Stashed changes
             panel2.Location = new Point(536, 95);
             panel2.Name = "panel2";
             panel2.Size = new Size(767, 852);
             panel2.TabIndex = 1;
             // 
+<<<<<<< Updated upstream
             // label7
             // 
             label7.AutoSize = true;
@@ -196,10 +241,26 @@
             label6.Size = new Size(442, 20);
             label6.TabIndex = 6;
             label6.Text = "Temporalmente (hasta que lo quite) te llevara al FormListaSimple";
+=======
+            // btnLD
+            // 
+            btnLD.BackColor = Color.DarkCyan;
+            btnLD.FlatAppearance.BorderSize = 0;
+            btnLD.FlatStyle = FlatStyle.Flat;
+            btnLD.ForeColor = SystemColors.ActiveCaptionText;
+            btnLD.Location = new Point(148, 341);
+            btnLD.Name = "btnLD";
+            btnLD.Size = new Size(94, 29);
+            btnLD.TabIndex = 8;
+            btnLD.Text = "Iniciar";
+            btnLD.UseVisualStyleBackColor = false;
+            btnLD.Click += btnLD_Click;
+>>>>>>> Stashed changes
             // 
             // label5
             // 
             label5.AutoSize = true;
+<<<<<<< Updated upstream
             label5.Location = new Point(30, 87);
             label5.Name = "label5";
             label5.Size = new Size(428, 20);
@@ -216,6 +277,14 @@
             button10.Text = "button10";
             button10.UseVisualStyleBackColor = true;
             button10.Click += button10_Click;
+=======
+            label5.Font = new Font("Perpetua", 20F);
+            label5.Location = new Point(41, 289);
+            label5.Name = "label5";
+            label5.Size = new Size(329, 39);
+            label5.TabIndex = 8;
+            label5.Text = "Formulario Listas Dobles";
+>>>>>>> Stashed changes
             // 
             // button5
             // 
@@ -244,6 +313,7 @@
             button3.Text = "Iniciar";
             button3.UseVisualStyleBackColor = true;
             // 
+<<<<<<< Updated upstream
             // btnlistaenlazada
             // 
             btnlistaenlazada.Location = new Point(182, 341);
@@ -254,6 +324,8 @@
             btnlistaenlazada.UseVisualStyleBackColor = true;
             btnlistaenlazada.Click += btnlistaenlazada_Click_1;
             // 
+=======
+>>>>>>> Stashed changes
             // panel3
             // 
             panel3.Controls.Add(button1);
@@ -303,7 +375,7 @@
             label1.TabIndex = 2;
             label1.Text = "Sistema de Inventario - Café de Altura";
             // 
-            // Form1
+            // InterfazPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -315,6 +387,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "Form1";
+            Name = "InterfazPrincipal";
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -333,7 +406,10 @@
         private Button button5;
         private Button button4;
         private Button button3;
+<<<<<<< Updated upstream
         private Button btnlistaenlazada;
+=======
+>>>>>>> Stashed changes
         private Panel panel3;
         private Button button7;
         private Button button6;
@@ -342,6 +418,7 @@
         private Label label4;
         private Button btnFormColas;
         private Label label3;
+<<<<<<< Updated upstream
         private Button btncolasenl;
         private Button button1;
         private Label label5;
@@ -350,5 +427,11 @@
         private Label label6;
         private Button btncolas;
         private Label label7;
+=======
+        private Button btnColaCircular;
+        private Button button1;
+        private Label label5;
+        private Button btnLD;
+>>>>>>> Stashed changes
     }
 }

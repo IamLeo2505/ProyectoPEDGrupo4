@@ -3,8 +3,10 @@ using System.Windows.Forms.VisualStyles;
 namespace ProyectoFinalEstructuraDatosGrupo4
 {
     public partial class Form1 : Form
+    public partial class InterfazPrincipal : Form
     {
         public Form1()
+        public InterfazPrincipal()
         {
             InitializeComponent();
         }
@@ -66,6 +68,18 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         {
             FormListaDoble listaDoble = new FormListaDoble();
             listaDoble.Show();
+        }
+
+        private void btnColaCircular_Click(object sender, EventArgs e)
+        {
+            FormColaCircular formColaCircular = new FormColaCircular();
+            formColaCircular.Show();
+        }
+
+        private void btnLD_Click(object sender, EventArgs e)
+        {
+            FrmListaDoble formListaDoble = new FrmListaDoble();
+            formListaDoble.Show();
         }
     }
 }

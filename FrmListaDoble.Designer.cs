@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinalEstructuraDatosGrupo4
 {
-    partial class FormColaCircular
+    partial class FrmListaDoble
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtproducto = new TextBox();
+            textproducto = new TextBox();
             dtpfechavencimiento = new DateTimePicker();
             dtpfechaingreso = new DateTimePicker();
             dgvProducto = new DataGridView();
@@ -40,48 +40,48 @@
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
-            txtprecioventa = new TextBox();
             txtpreciocompra = new TextBox();
+            txtprecioventa = new TextBox();
             txtdescripcion = new TextBox();
             txtcodigo = new TextBox();
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
+            label6 = new Label();
+            cbcategoria = new ComboBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            label6 = new Label();
-            cbcategoria = new ComboBox();
-            btnAñadir = new Button();
-            btnVerInicio = new Button();
-            btnVerFinal = new Button();
+            btnEditar = new Button();
             btnEliminar = new Button();
             btnCancelar = new Button();
+            btnAtras = new Button();
+            btnAñadir = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvProducto).BeginInit();
             SuspendLayout();
             // 
-            // txtproducto
+            // textproducto
             // 
-            txtproducto.Location = new Point(330, 145);
-            txtproducto.Name = "txtproducto";
-            txtproducto.Size = new Size(283, 27);
-            txtproducto.TabIndex = 42;
+            textproducto.Location = new Point(354, 196);
+            textproducto.Name = "textproducto";
+            textproducto.Size = new Size(328, 27);
+            textproducto.TabIndex = 44;
             // 
             // dtpfechavencimiento
             // 
-            dtpfechavencimiento.Location = new Point(330, 291);
+            dtpfechavencimiento.Location = new Point(352, 403);
             dtpfechavencimiento.Name = "dtpfechavencimiento";
-            dtpfechavencimiento.Size = new Size(259, 27);
-            dtpfechavencimiento.TabIndex = 41;
+            dtpfechavencimiento.Size = new Size(305, 27);
+            dtpfechavencimiento.TabIndex = 43;
             // 
             // dtpfechaingreso
             // 
-            dtpfechaingreso.Location = new Point(5, 291);
+            dtpfechaingreso.Location = new Point(26, 403);
             dtpfechaingreso.Name = "dtpfechaingreso";
-            dtpfechaingreso.Size = new Size(259, 27);
-            dtpfechaingreso.TabIndex = 40;
+            dtpfechaingreso.Size = new Size(298, 27);
+            dtpfechaingreso.TabIndex = 42;
             // 
             // dgvProducto
             // 
@@ -89,11 +89,11 @@
             dgvProducto.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProducto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProducto.Columns.AddRange(new DataGridViewColumn[] { column0, Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
-            dgvProducto.Location = new Point(5, 392);
+            dgvProducto.Location = new Point(26, 492);
             dgvProducto.Name = "dgvProducto";
             dgvProducto.RowHeadersWidth = 51;
-            dgvProducto.Size = new Size(1557, 431);
-            dgvProducto.TabIndex = 39;
+            dgvProducto.Size = new Size(1680, 432);
+            dgvProducto.TabIndex = 41;
             // 
             // column0
             // 
@@ -143,85 +143,89 @@
             Column7.MinimumWidth = 6;
             Column7.Name = "Column7";
             // 
-<<<<<<< Updated upstream
-            // txtprecioventa
-            // 
-            txtprecioventa.Location = new Point(966, 291);
-            txtprecioventa.Name = "txtprecioventa";
-            txtprecioventa.Size = new Size(135, 27);
-            txtprecioventa.TabIndex = 38;
-            // 
             // txtpreciocompra
             // 
-            txtpreciocompra.Location = new Point(686, 291);
+            txtpreciocompra.Location = new Point(1164, 403);
             txtpreciocompra.Name = "txtpreciocompra";
-            txtpreciocompra.Size = new Size(153, 27);
-            txtpreciocompra.TabIndex = 37;
-=======
-            // txtpreciocompra
-            // 
-            txtpreciocompra.Location = new Point(966, 291);
-            txtpreciocompra.Name = "txtpreciocompra";
-            txtpreciocompra.Size = new Size(135, 27);
-            txtpreciocompra.TabIndex = 38;
+            txtpreciocompra.Size = new Size(181, 27);
+            txtpreciocompra.TabIndex = 40;
             // 
             // txtprecioventa
             // 
-            txtprecioventa.Location = new Point(686, 291);
+            txtprecioventa.Location = new Point(884, 403);
             txtprecioventa.Name = "txtprecioventa";
-            txtprecioventa.Size = new Size(153, 27);
-            txtprecioventa.TabIndex = 37;
->>>>>>> Stashed changes
+            txtprecioventa.Size = new Size(198, 27);
+            txtprecioventa.TabIndex = 39;
             // 
             // txtdescripcion
             // 
-            txtdescripcion.Location = new Point(685, 145);
+            txtdescripcion.Location = new Point(884, 196);
             txtdescripcion.Name = "txtdescripcion";
-            txtdescripcion.Size = new Size(391, 27);
-            txtdescripcion.TabIndex = 36;
+            txtdescripcion.Size = new Size(437, 27);
+            txtdescripcion.TabIndex = 38;
             // 
             // txtcodigo
             // 
-            txtcodigo.Location = new Point(3, 145);
+            txtcodigo.Location = new Point(26, 196);
             txtcodigo.Name = "txtcodigo";
-            txtcodigo.Size = new Size(137, 27);
-            txtcodigo.TabIndex = 35;
+            txtcodigo.Size = new Size(182, 27);
+            txtcodigo.TabIndex = 37;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Perpetua", 22F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(3, 4);
+            label9.Location = new Point(26, 20);
             label9.Name = "label9";
             label9.Size = new Size(163, 42);
-            label9.TabIndex = 34;
+            label9.TabIndex = 36;
             label9.Text = "Inventario ";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Perpetua", 16.2F);
-            label8.Location = new Point(686, 247);
+            label8.Location = new Point(884, 359);
             label8.Name = "label8";
             label8.Size = new Size(198, 32);
-            label8.TabIndex = 33;
+            label8.TabIndex = 35;
             label8.Text = "Precio de Compra";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Perpetua", 16.2F);
-            label7.Location = new Point(954, 247);
+            label7.Location = new Point(1164, 359);
             label7.Name = "label7";
             label7.Size = new Size(174, 32);
-            label7.TabIndex = 32;
+            label7.TabIndex = 34;
             label7.Text = "Precio de Venta";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Perpetua", 16.2F);
+            label6.Location = new Point(1424, 161);
+            label6.Name = "label6";
+            label6.Size = new Size(111, 32);
+            label6.TabIndex = 33;
+            label6.Text = "Categoría";
+            // 
+            // cbcategoria
+            // 
+            cbcategoria.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbcategoria.FormattingEnabled = true;
+            cbcategoria.Items.AddRange(new object[] { "Bolsa 1 Lb", "Bolsa 2 Lb", "Paquete", "Vaso" });
+            cbcategoria.Location = new Point(1424, 195);
+            cbcategoria.Name = "cbcategoria";
+            cbcategoria.Size = new Size(282, 28);
+            cbcategoria.TabIndex = 32;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Perpetua", 16.2F);
-            label5.Location = new Point(5, 247);
+            label5.Location = new Point(26, 359);
             label5.Name = "label5";
             label5.Size = new Size(182, 32);
             label5.TabIndex = 31;
@@ -231,7 +235,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Perpetua", 16.2F);
-            label4.Location = new Point(331, 247);
+            label4.Location = new Point(354, 359);
             label4.Name = "label4";
             label4.Size = new Size(236, 32);
             label4.TabIndex = 30;
@@ -241,7 +245,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Perpetua", 16.2F);
-            label3.Location = new Point(685, 111);
+            label3.Location = new Point(884, 161);
             label3.Name = "label3";
             label3.Size = new Size(136, 32);
             label3.TabIndex = 29;
@@ -251,7 +255,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Perpetua", 16.2F);
-            label2.Location = new Point(329, 111);
+            label2.Location = new Point(352, 161);
             label2.Name = "label2";
             label2.Size = new Size(238, 32);
             label2.TabIndex = 28;
@@ -261,130 +265,96 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Perpetua", 16.2F);
-            label1.Location = new Point(3, 111);
+            label1.Location = new Point(26, 161);
             label1.Name = "label1";
             label1.Size = new Size(167, 32);
             label1.TabIndex = 27;
             label1.Text = "Ingrese Código";
             // 
-            // label6
+            // btnEditar
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Perpetua", 16.2F);
-            label6.Location = new Point(1186, 112);
-            label6.Name = "label6";
-            label6.Size = new Size(111, 32);
-            label6.TabIndex = 44;
-            label6.Text = "Categoría";
-            // 
-            // cbcategoria
-            // 
-            cbcategoria.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbcategoria.FormattingEnabled = true;
-<<<<<<< Updated upstream
-=======
-            cbcategoria.Items.AddRange(new object[] { "Bolsa 1 Lb", "Bolsa 2 Lb", "Paquete", "Vaso" });
->>>>>>> Stashed changes
-            cbcategoria.Location = new Point(1186, 145);
-            cbcategoria.Name = "cbcategoria";
-            cbcategoria.Size = new Size(282, 28);
-            cbcategoria.TabIndex = 43;
-            // 
-            // btnAñadir
-            // 
-            btnAñadir.Location = new Point(1161, 213);
-            btnAñadir.Margin = new Padding(3, 4, 3, 4);
-            btnAñadir.Name = "btnAñadir";
-            btnAñadir.Size = new Size(86, 31);
-            btnAñadir.TabIndex = 45;
-            btnAñadir.Text = "Añadir";
-            btnAñadir.UseVisualStyleBackColor = true;
-            btnAñadir.Click += button1_Click;
-            // 
-            // btnVerInicio
-            // 
-            btnVerInicio.Location = new Point(1166, 312);
-            btnVerInicio.Margin = new Padding(3, 4, 3, 4);
-            btnVerInicio.Name = "btnVerInicio";
-            btnVerInicio.Size = new Size(86, 31);
-            btnVerInicio.TabIndex = 46;
-            btnVerInicio.Text = "Ver Inicio";
-            btnVerInicio.UseVisualStyleBackColor = true;
-            btnVerInicio.Click += btnVerInicio_Click;
-            // 
-            // btnVerFinal
-            // 
-            btnVerFinal.Location = new Point(1375, 319);
-            btnVerFinal.Margin = new Padding(3, 4, 3, 4);
-            btnVerFinal.Name = "btnVerFinal";
-            btnVerFinal.Size = new Size(86, 31);
-            btnVerFinal.TabIndex = 47;
-            btnVerFinal.Text = "Ver Final";
-            btnVerFinal.UseVisualStyleBackColor = true;
-            btnVerFinal.Click += btnVerFinal_Click;
+            btnEditar.Font = new Font("Perpetua", 14F);
+            btnEditar.Location = new Point(483, 979);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(199, 37);
+            btnEditar.TabIndex = 49;
+            btnEditar.Text = "Editar Producto";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(1376, 216);
-            btnEliminar.Margin = new Padding(3, 4, 3, 4);
+            btnEliminar.Font = new Font("Perpetua", 14F);
+            btnEliminar.Location = new Point(255, 979);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(86, 31);
-            btnEliminar.TabIndex = 49;
-            btnEliminar.Text = "Eliminar";
+            btnEliminar.Size = new Size(199, 37);
+            btnEliminar.TabIndex = 48;
+            btnEliminar.Text = "Eliminar Producto";
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Click += btnEliminar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(1466, 849);
-            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Font = new Font("Perpetua", 14F);
+            btnCancelar.Location = new Point(1481, 979);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(86, 31);
-            btnCancelar.TabIndex = 75;
+            btnCancelar.Size = new Size(101, 37);
+            btnCancelar.TabIndex = 47;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += btnCancelar_Click;
             // 
-            // FormColaCircular
+            // btnAtras
+            // 
+            btnAtras.Font = new Font("Perpetua", 14F);
+            btnAtras.Location = new Point(1605, 979);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(101, 37);
+            btnAtras.TabIndex = 46;
+            btnAtras.Text = "Atrás";
+            btnAtras.UseVisualStyleBackColor = true;
+            // 
+            // btnAñadir
+            // 
+            btnAñadir.Font = new Font("Perpetua", 14F);
+            btnAñadir.Location = new Point(26, 979);
+            btnAñadir.Name = "btnAñadir";
+            btnAñadir.Size = new Size(199, 37);
+            btnAñadir.TabIndex = 45;
+            btnAñadir.Text = "Añadir Producto";
+            btnAñadir.UseVisualStyleBackColor = true;
+            btnAñadir.Click += btnAñadir_Click;
+            // 
+            // FrmListaDoble
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< Updated upstream
-            ClientSize = new Size(1566, 893);
-            Controls.Add(btnCancelar);
-=======
-            ClientSize = new Size(1566, 829);
->>>>>>> Stashed changes
+            ClientSize = new Size(1832, 1055);
+            Controls.Add(btnEditar);
             Controls.Add(btnEliminar);
-            Controls.Add(btnVerFinal);
-            Controls.Add(btnVerInicio);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnAtras);
             Controls.Add(btnAñadir);
-            Controls.Add(label6);
-            Controls.Add(cbcategoria);
-            Controls.Add(txtproducto);
+            Controls.Add(textproducto);
             Controls.Add(dtpfechavencimiento);
             Controls.Add(dtpfechaingreso);
             Controls.Add(dgvProducto);
-            Controls.Add(txtprecioventa);
             Controls.Add(txtpreciocompra);
+            Controls.Add(txtprecioventa);
             Controls.Add(txtdescripcion);
             Controls.Add(txtcodigo);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(cbcategoria);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "FormColaCircular";
-            Text = "FormColaCircular";
-<<<<<<< Updated upstream
-            Load += FormColaCircular_Load_1;
-=======
-            Load += FormColaCircular_Load;
->>>>>>> Stashed changes
+            Name = "FrmListaDoble";
+            Text = "FrmListaDoble";
+            Load += FrmListaDoble_Load;
             ((System.ComponentModel.ISupportInitialize)dgvProducto).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -392,7 +362,7 @@
 
         #endregion
 
-        private TextBox txtproducto;
+        private TextBox textproducto;
         private DateTimePicker dtpfechavencimiento;
         private DateTimePicker dtpfechaingreso;
         private DataGridView dgvProducto;
@@ -404,24 +374,24 @@
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column7;
-        private TextBox txtprecioventa;
         private TextBox txtpreciocompra;
+        private TextBox txtprecioventa;
         private TextBox txtdescripcion;
         private TextBox txtcodigo;
         private Label label9;
         private Label label8;
         private Label label7;
+        private Label label6;
+        private ComboBox cbcategoria;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
-        private Label label6;
-        private ComboBox cbcategoria;
-        private Button btnAñadir;
-        private Button btnVerInicio;
-        private Button btnVerFinal;
+        private Button btnEditar;
         private Button btnEliminar;
         private Button btnCancelar;
+        private Button btnAtras;
+        private Button btnAñadir;
     }
 }

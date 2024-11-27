@@ -40,8 +40,25 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                 string.IsNullOrWhiteSpace(txtpreciocompra.Text) ||
                 cbcategoria.SelectedItem == null)
             {
+<<<<<<< Updated upstream
                 // Mostrar mensaje de advertencia si hay algún campo vacío
                 MessageBox.Show("Por favor, rellene todos los campos antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+=======
+                ProductoColasCirculares nuevoProducto = new ProductoColasCirculares
+                (
+                    txtcodigo.Text,
+                    txtproducto.Text,
+                    txtdescripcion.Text,
+                    cbcategoria.Text,
+                    dtpfechaingreso.Value,
+                    dtpfechavencimiento.Value,
+                    Convert.ToDecimal(txtpreciocompra.Text),
+                    Convert.ToDecimal(txtprecioventa.Text)
+                );  
+                colaProductos.Añadir(nuevoProducto);
+                MessageBox.Show($"{nuevoProducto.NombreProducto} añadido a la cola.");
+                ActualizarInventario();
+>>>>>>> Stashed changes
             }
 
             else
@@ -131,12 +148,16 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             }
         }
 
+<<<<<<< Updated upstream
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         private void FormColaCircular_Load_1(object sender, EventArgs e)
+=======
+        private void FormColaCircular_Load(object sender, EventArgs e)
+>>>>>>> Stashed changes
         {
 
         }
