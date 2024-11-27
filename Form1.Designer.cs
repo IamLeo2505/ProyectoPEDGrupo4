@@ -83,7 +83,6 @@
             button9.TabIndex = 7;
             button9.Text = "Iniciar";
             button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
             // 
             // label4
             // 
@@ -128,7 +127,6 @@
             label2.Size = new Size(163, 31);
             label2.TabIndex = 3;
             label2.Text = "Formulario Pila";
-            label2.Click += label2_Click;
             // 
             // btnPilas
             // 
@@ -143,7 +141,6 @@
             btnPilas.TabIndex = 0;
             btnPilas.Text = "Iniciar";
             btnPilas.UseVisualStyleBackColor = false;
-            btnPilas.Click += btnPilas_Click;
             // 
             // panel2
             // 
@@ -169,7 +166,6 @@
             label11.Size = new Size(210, 31);
             label11.TabIndex = 3;
             label11.Text = "Formulario Shellsort";
-            label11.Click += label2_Click;
             // 
             // label10
             // 
@@ -180,7 +176,6 @@
             label10.Size = new Size(251, 31);
             label10.TabIndex = 3;
             label10.Text = "Formulario Selectionsort";
-            label10.Click += label2_Click;
             // 
             // label8
             // 
@@ -191,7 +186,6 @@
             label8.Size = new Size(215, 31);
             label8.TabIndex = 3;
             label8.Text = "Formulario Heapsort";
-            label8.Click += label2_Click;
             // 
             // label5
             // 
@@ -202,7 +196,6 @@
             label5.Size = new Size(231, 31);
             label5.TabIndex = 3;
             label5.Text = "Formulario Bubblesort";
-            label5.Click += label2_Click;
             // 
             // label9
             // 
@@ -213,7 +206,6 @@
             label9.Size = new Size(220, 31);
             label9.TabIndex = 3;
             label9.Text = "Formulario Shakesort";
-            label9.Click += label2_Click;
             // 
             // button10
             // 
@@ -227,7 +219,6 @@
             button10.TabIndex = 5;
             button10.Text = "Iniciar";
             button10.UseVisualStyleBackColor = false;
-            button10.Click += button10_Click;
             // 
             // label6
             // 
@@ -238,7 +229,6 @@
             label6.Size = new Size(223, 31);
             label6.TabIndex = 3;
             label6.Text = "Formulario Quicksort";
-            label6.Click += label2_Click;
             // 
             // button11
             // 
@@ -251,7 +241,6 @@
             button11.TabIndex = 7;
             button11.Text = "Iniciar";
             button11.UseVisualStyleBackColor = false;
-            button11.Click += button11_Click;
             // 
             // label7
             // 
@@ -262,7 +251,6 @@
             label7.Size = new Size(244, 31);
             label7.TabIndex = 3;
             label7.Text = "Formulario Lista Simple";
-            label7.Click += label2_Click;
             // 
             // panel3
             // 
@@ -283,7 +271,6 @@
             button6.TabIndex = 1;
             button6.Text = "Salir";
             button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
             // 
             // label1
             // 
@@ -315,7 +302,6 @@
             label12.Size = new Size(238, 31);
             label12.TabIndex = 3;
             label12.Text = "Formulario Lista Doble";
-            label12.Click += label2_Click;
             // 
             // panel5
             // 
