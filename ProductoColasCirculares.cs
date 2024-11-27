@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinalEstructuraDatosGrupo4
 {
-    internal class ProductoColasCirculares
+    public class ProductoColasCirculares
     {
         public string Codigo { get; set; }
         public string NombreProducto { get; set; }
@@ -17,15 +17,14 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         public decimal PrecioCompra { get; set; }
         public decimal PrecioVenta { get; set; }
 
-        // Constructor para inicializar el producto
+        // Constructor completo
         public ProductoColasCirculares(
-            string codigo, string producto, string descripcion,
-            string categoria, DateTime fechaIngreso, DateTime fechaVencimiento,
-            decimal precioCompra, decimal precioVenta
-            )
+            string codigo, string nombreProducto, string descripcion, string categoria,
+            DateTime fechaIngreso, DateTime fechaVencimiento, decimal precioCompra,
+            decimal precioVenta)
         {
             Codigo = codigo;
-            NombreProducto = producto;
+            NombreProducto = nombreProducto;
             Descripcion = descripcion;
             Categoria = categoria;
             FechaIngreso = fechaIngreso;
@@ -34,8 +33,10 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             PrecioVenta = precioVenta;
         }
 
+        // Constructor vacío (opcional para flexibilidad)
+        public ProductoColasCirculares() { }
 
-        // Sobreescribir ToString para mostrar fácilmente el producto en la lista
+        // Sobreescribir ToString
         public override string ToString()
         {
             return $"Código: {Codigo}, Producto: {NombreProducto}, Categoría: {Categoria}, Precio Venta: ${PrecioVenta}";

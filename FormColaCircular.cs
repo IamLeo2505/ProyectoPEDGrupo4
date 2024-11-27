@@ -18,30 +18,55 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         {
             InitializeComponent();
             colaProductos = new ColaCircular(10);
+            this.Load += FormColaCircular_Load;
         }
+
+        private void FormColaCircular_Load(object sender, EventArgs e)
+        {
+            cbcategoria.Items.Add("Bolsa 1 Lb");
+            cbcategoria.Items.Add("Bolsa 2 Lb");
+            cbcategoria.Items.Add("Paquete");
+            cbcategoria.Items.Add("Vaso");
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            // Validar que no haya campos vacíos
+            if (string.IsNullOrWhiteSpace(txtcodigo.Text) ||
+                string.IsNullOrWhiteSpace(txtproducto.Text) ||
+                string.IsNullOrWhiteSpace(txtdescripcion.Text) ||
+                string.IsNullOrWhiteSpace(txtpreciocompra.Text) ||
+                string.IsNullOrWhiteSpace(txtprecioventa.Text) ||
+                cbcategoria.SelectedItem == null)
             {
-                ProductoColasCirculares nuevoProducto = new ProductoColasCirculares
-                (
-                    txtcodigo.Text,
-                    txtproducto.Text,
-                    txtdescripcion.Text,
-                    cbcategoria.SelectedValue.ToString(),
-                    dtpfechaingreso.Value,
-                    dtpfechavencimiento.Value,
-                    Convert.ToDecimal(txtpreciocompra.Text),
-                    Convert.ToDecimal(txtprecioventa.Text)
-                );
-                colaProductos.Añadir(nuevoProducto);
-                MessageBox.Show($"{nuevoProducto.NombreProducto} añadido a la cola.");
-                ActualizarInventario();
+                // Mostrar mensaje de advertencia si hay algún campo vacío
+                MessageBox.Show("Por favor, rellene todos los campos antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (Exception ex)
+
+            else
             {
-                MessageBox.Show(ex.Message);
+                try
+                {
+                    ProductoColasCirculares nuevoProducto = new ProductoColasCirculares
+                    (
+                        txtcodigo.Text,
+                        txtproducto.Text,
+                        txtdescripcion.Text,
+                        cbcategoria.SelectedItem.ToString(),
+                        dtpfechaingreso.Value,
+                        dtpfechavencimiento.Value,
+                        Convert.ToDecimal(txtpreciocompra.Text),
+                        Convert.ToDecimal(txtprecioventa.Text)
+                    );
+                    colaProductos.Añadir(nuevoProducto);
+                    MessageBox.Show($"{nuevoProducto.NombreProducto} añadido a la cola.");
+                    ActualizarInventario();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
@@ -104,6 +129,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                     producto.PrecioVenta
                 });
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

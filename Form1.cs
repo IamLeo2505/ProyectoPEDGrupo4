@@ -29,10 +29,22 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             this.Close();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)
         {
-            frmcolas colasform = new frmcolas();
-            colasform.Show();
+            FormColaCircular ColaCircularForm = new FormColaCircular();
+            ColaCircularForm.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            FormQuicksort QuicksortForm = new FormQuicksort();
+            QuicksortForm.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            FormListaSimple ListaSimpleForm = new FormListaSimple();
+            ListaSimpleForm.Show();
         }
     }
 }

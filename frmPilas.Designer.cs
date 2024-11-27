@@ -68,9 +68,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Perpetua", 16.2F);
-            label1.Location = new Point(36, 165);
+            label1.Location = new Point(32, 124);
             label1.Name = "label1";
-            label1.Size = new Size(167, 32);
+            label1.Size = new Size(133, 25);
             label1.TabIndex = 0;
             label1.Text = "Ingrese Código";
             // 
@@ -78,9 +78,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Perpetua", 16.2F);
-            label2.Location = new Point(362, 165);
+            label2.Location = new Point(317, 124);
             label2.Name = "label2";
-            label2.Size = new Size(238, 32);
+            label2.Size = new Size(187, 25);
             label2.TabIndex = 1;
             label2.Text = "Nombre del Producto";
             // 
@@ -88,9 +88,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Perpetua", 16.2F);
-            label3.Location = new Point(894, 165);
+            label3.Location = new Point(782, 124);
             label3.Name = "label3";
-            label3.Size = new Size(136, 32);
+            label3.Size = new Size(107, 25);
             label3.TabIndex = 2;
             label3.Text = "Descripción";
             // 
@@ -98,9 +98,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Perpetua", 16.2F);
-            label4.Location = new Point(364, 363);
+            label4.Location = new Point(318, 272);
             label4.Name = "label4";
-            label4.Size = new Size(236, 32);
+            label4.Size = new Size(187, 25);
             label4.TabIndex = 3;
             label4.Text = "Fecha de Vencimiento";
             // 
@@ -108,9 +108,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Perpetua", 16.2F);
-            label5.Location = new Point(36, 363);
+            label5.Location = new Point(32, 272);
             label5.Name = "label5";
-            label5.Size = new Size(182, 32);
+            label5.Size = new Size(145, 25);
             label5.TabIndex = 4;
             label5.Text = "Fecha de Ingreso";
             // 
@@ -118,19 +118,19 @@
             // 
             cbcategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cbcategoria.FormattingEnabled = true;
-            cbcategoria.Items.AddRange(new object[] { "Bolsa 1 Lb", "Bolsa 2 Lb", "Paquete", "Vaso" });
-            cbcategoria.Location = new Point(1434, 199);
+            cbcategoria.Location = new Point(1255, 150);
+            cbcategoria.Margin = new Padding(3, 2, 3, 2);
             cbcategoria.Name = "cbcategoria";
-            cbcategoria.Size = new Size(282, 28);
+            cbcategoria.Size = new Size(247, 23);
             cbcategoria.TabIndex = 5;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Perpetua", 16.2F);
-            label6.Location = new Point(1434, 165);
+            label6.Location = new Point(1255, 124);
             label6.Name = "label6";
-            label6.Size = new Size(111, 32);
+            label6.Size = new Size(89, 25);
             label6.TabIndex = 6;
             label6.Text = "Categoría";
             // 
@@ -138,9 +138,9 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Perpetua", 16.2F);
-            label7.Location = new Point(1174, 363);
+            label7.Location = new Point(1027, 272);
             label7.Name = "label7";
-            label7.Size = new Size(174, 32);
+            label7.Size = new Size(138, 25);
             label7.TabIndex = 7;
             label7.Text = "Precio de Venta";
             // 
@@ -148,9 +148,9 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Perpetua", 16.2F);
-            label8.Location = new Point(894, 363);
+            label8.Location = new Point(782, 272);
             label8.Name = "label8";
-            label8.Size = new Size(198, 32);
+            label8.Size = new Size(158, 25);
             label8.TabIndex = 8;
             label8.Text = "Precio de Compra";
             // 
@@ -158,32 +158,35 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Perpetua", 22F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(36, 24);
+            label9.Location = new Point(32, 18);
             label9.Name = "label9";
-            label9.Size = new Size(163, 42);
+            label9.Size = new Size(134, 35);
             label9.TabIndex = 9;
             label9.Text = "Inventario ";
             // 
             // txtcodigo
             // 
-            txtcodigo.Location = new Point(36, 200);
+            txtcodigo.Location = new Point(32, 150);
+            txtcodigo.Margin = new Padding(3, 2, 3, 2);
             txtcodigo.Name = "txtcodigo";
-            txtcodigo.Size = new Size(182, 27);
+            txtcodigo.Size = new Size(160, 23);
             txtcodigo.TabIndex = 10;
             // 
             // txtdescripcion
             // 
-            txtdescripcion.Location = new Point(894, 200);
+            txtdescripcion.Location = new Point(782, 150);
+            txtdescripcion.Margin = new Padding(3, 2, 3, 2);
             txtdescripcion.Name = "txtdescripcion";
-            txtdescripcion.Size = new Size(437, 27);
+            txtdescripcion.Size = new Size(383, 23);
             txtdescripcion.TabIndex = 11;
             // 
             // btnAñadir
             // 
             btnAñadir.Font = new Font("Perpetua", 14F);
-            btnAñadir.Location = new Point(36, 1006);
+            btnAñadir.Location = new Point(32, 754);
+            btnAñadir.Margin = new Padding(3, 2, 3, 2);
             btnAñadir.Name = "btnAñadir";
-            btnAñadir.Size = new Size(199, 37);
+            btnAñadir.Size = new Size(174, 28);
             btnAñadir.TabIndex = 12;
             btnAñadir.Text = "Añadir Producto";
             btnAñadir.UseVisualStyleBackColor = true;
@@ -191,24 +194,27 @@
             // 
             // txtprecioventa
             // 
-            txtprecioventa.Location = new Point(894, 407);
+            txtprecioventa.Location = new Point(782, 305);
+            txtprecioventa.Margin = new Padding(3, 2, 3, 2);
             txtprecioventa.Name = "txtprecioventa";
-            txtprecioventa.Size = new Size(198, 27);
+            txtprecioventa.Size = new Size(174, 23);
             txtprecioventa.TabIndex = 15;
             // 
             // txtpreciocompra
             // 
-            txtpreciocompra.Location = new Point(1174, 407);
+            txtpreciocompra.Location = new Point(1027, 305);
+            txtpreciocompra.Margin = new Padding(3, 2, 3, 2);
             txtpreciocompra.Name = "txtpreciocompra";
-            txtpreciocompra.Size = new Size(181, 27);
+            txtpreciocompra.Size = new Size(159, 23);
             txtpreciocompra.TabIndex = 16;
             // 
             // btnAtras
             // 
             btnAtras.Font = new Font("Perpetua", 14F);
-            btnAtras.Location = new Point(1615, 1006);
+            btnAtras.Location = new Point(1413, 754);
+            btnAtras.Margin = new Padding(3, 2, 3, 2);
             btnAtras.Name = "btnAtras";
-            btnAtras.Size = new Size(101, 37);
+            btnAtras.Size = new Size(88, 28);
             btnAtras.TabIndex = 19;
             btnAtras.Text = "Atrás";
             btnAtras.UseVisualStyleBackColor = true;
@@ -217,9 +223,10 @@
             // btnCancelar
             // 
             btnCancelar.Font = new Font("Perpetua", 14F);
-            btnCancelar.Location = new Point(1491, 1006);
+            btnCancelar.Location = new Point(1305, 754);
+            btnCancelar.Margin = new Padding(3, 2, 3, 2);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 37);
+            btnCancelar.Size = new Size(88, 28);
             btnCancelar.TabIndex = 20;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -228,9 +235,10 @@
             // btnEliminar
             // 
             btnEliminar.Font = new Font("Perpetua", 14F);
-            btnEliminar.Location = new Point(265, 1006);
+            btnEliminar.Location = new Point(232, 754);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(199, 37);
+            btnEliminar.Size = new Size(174, 28);
             btnEliminar.TabIndex = 21;
             btnEliminar.Text = "Eliminar Producto";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -239,9 +247,10 @@
             // btnVU
             // 
             btnVU.Font = new Font("Perpetua", 14F);
-            btnVU.Location = new Point(493, 1006);
+            btnVU.Location = new Point(431, 754);
+            btnVU.Margin = new Padding(3, 2, 3, 2);
             btnVU.Name = "btnVU";
-            btnVU.Size = new Size(199, 37);
+            btnVU.Size = new Size(174, 28);
             btnVU.TabIndex = 22;
             btnVU.Text = "Ver Último";
             btnVU.UseVisualStyleBackColor = true;
@@ -253,10 +262,11 @@
             dgvProducto.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProducto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProducto.Columns.AddRange(new DataGridViewColumn[] { column0, Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
-            dgvProducto.Location = new Point(36, 508);
+            dgvProducto.Location = new Point(32, 381);
+            dgvProducto.Margin = new Padding(3, 2, 3, 2);
             dgvProducto.Name = "dgvProducto";
             dgvProducto.RowHeadersWidth = 51;
-            dgvProducto.Size = new Size(1680, 432);
+            dgvProducto.Size = new Size(1470, 324);
             dgvProducto.TabIndex = 23;
             dgvProducto.CellContentClick += dgvProducto_CellContentClick;
             // 
@@ -310,23 +320,26 @@
             // 
             // dtpfechaingreso
             // 
-            dtpfechaingreso.Location = new Point(36, 407);
+            dtpfechaingreso.Location = new Point(32, 305);
+            dtpfechaingreso.Margin = new Padding(3, 2, 3, 2);
             dtpfechaingreso.Name = "dtpfechaingreso";
-            dtpfechaingreso.Size = new Size(298, 27);
+            dtpfechaingreso.Size = new Size(261, 23);
             dtpfechaingreso.TabIndex = 24;
             // 
             // dtpfechavencimiento
             // 
-            dtpfechavencimiento.Location = new Point(362, 407);
+            dtpfechavencimiento.Location = new Point(317, 305);
+            dtpfechavencimiento.Margin = new Padding(3, 2, 3, 2);
             dtpfechavencimiento.Name = "dtpfechavencimiento";
-            dtpfechavencimiento.Size = new Size(305, 27);
+            dtpfechavencimiento.Size = new Size(267, 23);
             dtpfechavencimiento.TabIndex = 25;
             // 
             // textproducto
             // 
-            textproducto.Location = new Point(364, 200);
+            textproducto.Location = new Point(318, 150);
+            textproducto.Margin = new Padding(3, 2, 3, 2);
             textproducto.Name = "textproducto";
-            textproducto.Size = new Size(328, 27);
+            textproducto.Size = new Size(288, 23);
             textproducto.TabIndex = 26;
             // 
             // contextMenuStrip1
@@ -337,9 +350,9 @@
             // 
             // frmPilas
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1760, 1055);
+            ClientSize = new Size(1301, 562);
             Controls.Add(textproducto);
             Controls.Add(dtpfechavencimiento);
             Controls.Add(dtpfechaingreso);
@@ -363,6 +376,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmPilas";
             Text = "frmPilas";
             Load += frmPilas_Load;
