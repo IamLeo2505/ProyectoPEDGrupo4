@@ -58,5 +58,12 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
             formQuicksort.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormArbolBinario formArbolBinario = new FormArbolBinario();
+
+            formArbolBinario.Show();
+        }
     }
 }

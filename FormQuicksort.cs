@@ -46,10 +46,10 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             {
                 MessageBox.Show("Por favor, rellene todos los campos antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-            else if (dtpfechavencimiento.Value <= dtpfechaingreso.Value)
+            else if (dtpfechaingreso.Value.Date >= dtpfechavencimiento.Value.Date)
             {
-                MessageBox.Show("La fecha de vencimiento debe ser posterior a la fecha de ingreso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("La fecha de vencimiento no puede ser igual o menor a la fecha de ingreso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             else

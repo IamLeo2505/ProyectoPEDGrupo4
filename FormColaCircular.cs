@@ -43,6 +43,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                 // Mostrar mensaje de advertencia si hay algún campo vacío
                 MessageBox.Show("Por favor, rellene todos los campos antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else if (dtpfechaingreso.Value.Date >= dtpfechavencimiento.Value.Date)
+            {
+                MessageBox.Show("La fecha de vencimiento no puede ser igual o menor a la fecha de ingreso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             else
             {
@@ -56,8 +61,8 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                         cbcategoria.SelectedItem.ToString(),
                         dtpfechaingreso.Value,
                         dtpfechavencimiento.Value,
-                        Convert.ToDecimal(txtprecioventa.Text),
-                        Convert.ToDecimal(txtpreciocompra.Text)
+                        Convert.ToDecimal(txtpreciocompra.Text),
+                        Convert.ToDecimal(txtprecioventa.Text)
                     );
                     colaProductos.Añadir(nuevoProducto);
                     MessageBox.Show($"{nuevoProducto.NombreProducto} añadido a la cola.");

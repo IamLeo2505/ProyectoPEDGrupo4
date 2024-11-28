@@ -51,9 +51,9 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                 MessageBox.Show("Por favor, complete todos los campos y seleccione una categoría.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            else if (dtpfechaingreso.Value.Date == dtpfechavencimiento.Value.Date)
+            else if (dtpfechaingreso.Value.Date >= dtpfechavencimiento.Value.Date)
             {
-                MessageBox.Show("La fecha de vencimiento no puede ser igual a la fecha de ingreso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("La fecha de vencimiento no puede ser igual o menor a la fecha de ingreso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else if (!rbtInicio.Checked && !rbtFinal.Checked)
@@ -151,6 +151,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         private void FormListaSimple_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
