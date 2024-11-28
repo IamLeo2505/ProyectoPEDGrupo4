@@ -143,7 +143,6 @@
             Column7.MinimumWidth = 6;
             Column7.Name = "Column7";
             // 
-<<<<<<< Updated upstream
             // txtprecioventa
             // 
             txtprecioventa.Location = new Point(966, 291);
@@ -157,21 +156,6 @@
             txtpreciocompra.Name = "txtpreciocompra";
             txtpreciocompra.Size = new Size(153, 27);
             txtpreciocompra.TabIndex = 37;
-=======
-            // txtpreciocompra
-            // 
-            txtpreciocompra.Location = new Point(966, 291);
-            txtpreciocompra.Name = "txtpreciocompra";
-            txtpreciocompra.Size = new Size(135, 27);
-            txtpreciocompra.TabIndex = 38;
-            // 
-            // txtprecioventa
-            // 
-            txtprecioventa.Location = new Point(686, 291);
-            txtprecioventa.Name = "txtprecioventa";
-            txtprecioventa.Size = new Size(153, 27);
-            txtprecioventa.TabIndex = 37;
->>>>>>> Stashed changes
             // 
             // txtdescripcion
             // 
@@ -281,10 +265,6 @@
             // 
             cbcategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cbcategoria.FormattingEnabled = true;
-<<<<<<< Updated upstream
-=======
-            cbcategoria.Items.AddRange(new object[] { "Bolsa 1 Lb", "Bolsa 2 Lb", "Paquete", "Vaso" });
->>>>>>> Stashed changes
             cbcategoria.Location = new Point(1186, 145);
             cbcategoria.Name = "cbcategoria";
             cbcategoria.Size = new Size(282, 28);
@@ -349,12 +329,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< Updated upstream
             ClientSize = new Size(1566, 893);
             Controls.Add(btnCancelar);
-=======
-            ClientSize = new Size(1566, 829);
->>>>>>> Stashed changes
             Controls.Add(btnEliminar);
             Controls.Add(btnVerFinal);
             Controls.Add(btnVerInicio);
@@ -380,11 +356,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "FormColaCircular";
             Text = "FormColaCircular";
-<<<<<<< Updated upstream
             Load += FormColaCircular_Load_1;
-=======
-            Load += FormColaCircular_Load;
->>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)dgvProducto).EndInit();
             ResumeLayout(false);
             PerformLayout();
