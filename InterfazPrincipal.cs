@@ -72,5 +72,25 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
             formGrafoAlgoritmoFloyd.Show();
         }
+
+        private void InterfazPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
