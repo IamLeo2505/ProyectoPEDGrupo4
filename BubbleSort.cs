@@ -7,12 +7,15 @@ namespace ProyectoFinalEstructuraDatosGrupo4
     {
         public static void Ordenar(List<ProductoColasCirculares> productos, string criterio, bool ascendente)
         {
+            // Obtener el tamaño de la lista
             int n = productos.Count;
+            // Bucles anidados para realizar múltiples pasadas sobre la lista
             for (int i = 0; i < n - 1; i++)
             {
+                // En cada pasada, los elementos más grandes "burbujean" hacia el final
                 for (int j = 0; j < n - i - 1; j++)
                 {
-                    // Comparar según el criterio
+                    // Switch para comparar según se elija el criterio
                     bool condicion;
                     switch (criterio)
                     {
@@ -38,7 +41,7 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                             throw new ArgumentException("Criterio inválido");
                     }
 
-                    // Invertir la condición si es descendente
+                    // Si se seleccionó un orden descendente, invertir la condición
                     if (!ascendente)
                     {
                         condicion = !condicion;
