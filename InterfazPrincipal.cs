@@ -92,5 +92,12 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         {
 
         }
+
+        private void btnBubble_Click(object sender, EventArgs e)
+        {
+            FormBubbleSort formBubbleSort = new FormBubbleSort();
+
+            formBubbleSort.Show();
+        }
     }
 }

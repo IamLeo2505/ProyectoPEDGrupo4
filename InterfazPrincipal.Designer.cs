@@ -266,6 +266,7 @@
             btnBubble.TabIndex = 6;
             btnBubble.Text = "Iniciar";
             btnBubble.UseVisualStyleBackColor = false;
+            btnBubble.Click += btnBubble_Click;
             // 
             // label11
             // 
