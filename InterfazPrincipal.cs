@@ -99,5 +99,13 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
             formBubbleSort.Show();
         }
+
+        private void btnHeap_Click(object sender, EventArgs e)
+        {
+            FormHeapSort formHeapSort = new FormHeapSort();
+
+            formHeapSort.Show();
+                
+        }
     }
 }

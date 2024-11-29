@@ -9,12 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="FormListaDoble.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormBubbleSort.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="FormListaDoble.cs" />
+    <Compile Update="FormBubbleSort.cs" />
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

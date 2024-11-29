@@ -253,6 +253,7 @@
             btnHeap.TabIndex = 7;
             btnHeap.Text = "Iniciar";
             btnHeap.UseVisualStyleBackColor = false;
+            btnHeap.Click += btnHeap_Click;
             // 
             // btnBubble
             // 
