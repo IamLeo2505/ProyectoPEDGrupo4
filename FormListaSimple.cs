@@ -56,6 +56,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                 MessageBox.Show("La fecha de vencimiento no puede ser igual o menor a la fecha de ingreso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            else if (!decimal.TryParse(txtpreciocompra.Text, out decimal precioCompra) || !decimal.TryParse(txtprecioventa.Text, out decimal precioVenta))
+            {
+                MessageBox.Show("Por favor, ingrese precios válidos.");
+                return;
+            }
             else if (!rbtInicio.Checked && !rbtFinal.Checked)
             {
                 MessageBox.Show("Selecione la ubicaión del dato a añadir.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

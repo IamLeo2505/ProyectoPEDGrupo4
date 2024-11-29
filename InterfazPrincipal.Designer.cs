@@ -30,6 +30,10 @@
         {
             label1 = new Label();
             panel5 = new Panel();
+            button2 = new Button();
+            button1 = new Button();
+            label15 = new Label();
+            label14 = new Label();
             panel2 = new Panel();
             btnShell = new Button();
             btnShake = new Button();
@@ -57,16 +61,12 @@
             btnColaCircular = new Button();
             panel1 = new Panel();
             panel6 = new Panel();
-            label14 = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
             button5 = new Button();
+            button4 = new Button();
+            button3 = new Button();
+            label16 = new Label();
+            label18 = new Label();
+            label17 = new Label();
             panel5.SuspendLayout();
             panel2.SuspendLayout();
             panel4.SuspendLayout();
@@ -96,6 +96,51 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(292, 267);
             panel5.TabIndex = 5;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.DarkCyan;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.ForeColor = SystemColors.ActiveCaptionText;
+            button2.Location = new Point(95, 195);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 5;
+            button2.Text = "Iniciar";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkCyan;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = SystemColors.ActiveCaptionText;
+            button1.Location = new Point(100, 85);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 4;
+            button1.Text = "Iniciar";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Perpetua", 20F);
+            label15.Location = new Point(29, 150);
+            label15.Name = "label15";
+            label15.Size = new Size(234, 31);
+            label15.TabIndex = 3;
+            label15.Text = "Formulario Arbol AVL";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Perpetua", 20F);
+            label14.Location = new Point(29, 36);
+            label14.Name = "label14";
+            label14.Size = new Size(257, 31);
+            label14.TabIndex = 3;
+            label14.Text = "Formulario Arbol Binario";
             // 
             // panel2
             // 
@@ -433,80 +478,30 @@
             panel6.Size = new Size(316, 267);
             panel6.TabIndex = 5;
             // 
-            // label14
+            // button5
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Perpetua", 20F);
-            label14.Location = new Point(29, 36);
-            label14.Name = "label14";
-            label14.Size = new Size(257, 31);
-            label14.TabIndex = 3;
-            label14.Text = "Formulario Arbol Binario";
+            button5.BackColor = Color.DarkCyan;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.ForeColor = SystemColors.ActiveCaptionText;
+            button5.Location = new Point(110, 217);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 9;
+            button5.Text = "Iniciar";
+            button5.UseVisualStyleBackColor = false;
             // 
-            // label15
+            // button4
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Perpetua", 20F);
-            label15.Location = new Point(29, 150);
-            label15.Name = "label15";
-            label15.Size = new Size(234, 31);
-            label15.TabIndex = 3;
-            label15.Text = "Formulario Arbol AVL";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Perpetua", 18F);
-            label16.Location = new Point(8, 10);
-            label16.Name = "label16";
-            label16.Size = new Size(299, 28);
-            label16.TabIndex = 3;
-            label16.Text = "Formulario Algortimo de Dijktra";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Perpetua", 20F);
-            label17.Location = new Point(1, 92);
-            label17.Name = "label17";
-            label17.Size = new Size(314, 31);
-            label17.TabIndex = 4;
-            label17.Text = "Formulario Algortimo de Floyd";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Perpetua", 18F);
-            label18.Location = new Point(7, 183);
-            label18.Name = "label18";
-            label18.Size = new Size(301, 28);
-            label18.TabIndex = 6;
-            label18.Text = "Formulario Algortimo de Marsall";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.DarkCyan;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(100, 85);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Iniciar";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.DarkCyan;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = SystemColors.ActiveCaptionText;
-            button2.Location = new Point(95, 195);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 5;
-            button2.Text = "Iniciar";
-            button2.UseVisualStyleBackColor = false;
+            button4.BackColor = Color.DarkCyan;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.ForeColor = SystemColors.ActiveCaptionText;
+            button4.Location = new Point(110, 136);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 8;
+            button4.Text = "Iniciar";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -520,29 +515,35 @@
             button3.Text = "Iniciar";
             button3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // label16
             // 
-            button4.BackColor = Color.DarkCyan;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = SystemColors.ActiveCaptionText;
-            button4.Location = new Point(110, 136);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 8;
-            button4.Text = "Iniciar";
-            button4.UseVisualStyleBackColor = false;
+            label16.AutoSize = true;
+            label16.Font = new Font("Perpetua", 18F);
+            label16.Location = new Point(8, 10);
+            label16.Name = "label16";
+            label16.Size = new Size(299, 28);
+            label16.TabIndex = 3;
+            label16.Text = "Formulario Algortimo de Dijktra";
             // 
-            // button5
+            // label18
             // 
-            button5.BackColor = Color.DarkCyan;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = SystemColors.ActiveCaptionText;
-            button5.Location = new Point(110, 217);
-            button5.Name = "button5";
-            button5.Size = new Size(75, 23);
-            button5.TabIndex = 9;
-            button5.Text = "Iniciar";
-            button5.UseVisualStyleBackColor = false;
+            label18.AutoSize = true;
+            label18.Font = new Font("Perpetua", 18F);
+            label18.Location = new Point(7, 183);
+            label18.Name = "label18";
+            label18.Size = new Size(301, 28);
+            label18.TabIndex = 6;
+            label18.Text = "Formulario Algortimo de Marsall";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Perpetua", 20F);
+            label17.Location = new Point(1, 92);
+            label17.Name = "label17";
+            label17.Size = new Size(314, 31);
+            label17.TabIndex = 4;
+            label17.Text = "Formulario Algortimo de Floyd";
             // 
             // InterfazPrincipal
             // 

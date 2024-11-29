@@ -87,26 +87,20 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            // Verificar si se ha seleccionado una fila en el DataGridView
             if (dgvProducto.SelectedRows.Count > 0)
             {
                 foreach (DataGridViewRow fila in dgvProducto.SelectedRows)
                 {
                     if (!fila.IsNewRow && fila.Cells["column0"].Value != null)
                     {
-                        // Obtener el código del producto seleccionado desde la tabla
                         string codigoProducto = fila.Cells["column0"].Value.ToString();
-
-                        // Eliminar el producto del árbol binario utilizando el código
                         bool eliminado = arbolBinario.Eliminar(codigoProducto);
 
                         if (eliminado)
                         {
                             MessageBox.Show("Producto eliminado del árbol binario.");
-                            // Recorrer el árbol para obtener los productos restantes
                             List<ProductoColasCirculares> productos = new List<ProductoColasCirculares>();
                             arbolBinario.RecorrerEnOrden(arbolBinario.Raiz, p => productos.Add(p));
-                            // Mostrar los productos restantes en el DataGridView
                             MostrarProductos(productos);
                         }
                         else

@@ -65,5 +65,12 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
             formArbolBinario.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormGrafoAlgoritmoFloyd formGrafoAlgoritmoFloyd = new FormGrafoAlgoritmoFloyd();
+
+            formGrafoAlgoritmoFloyd.Show();
+        }
     }
 }

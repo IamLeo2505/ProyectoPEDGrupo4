@@ -43,6 +43,11 @@ namespace ProyectoFinalEstructuraDatosGrupo4
                 // Mostrar mensaje de advertencia si hay algún campo vacío
                 MessageBox.Show("Por favor, rellene todos los campos antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            if (!decimal.TryParse(txtpreciocompra.Text, out decimal precioCompra) || !decimal.TryParse(txtprecioventa.Text, out decimal precioVenta))
+            {
+                MessageBox.Show("Por favor, ingrese precios válidos.");
+                return;
+            }
             else if (dtpfechaingreso.Value.Date >= dtpfechavencimiento.Value.Date)
             {
                 MessageBox.Show("La fecha de vencimiento no puede ser igual o menor a la fecha de ingreso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
