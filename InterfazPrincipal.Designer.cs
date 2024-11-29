@@ -226,6 +226,7 @@
             btnShake.TabIndex = 9;
             btnShake.Text = "Iniciar";
             btnShake.UseVisualStyleBackColor = false;
+            btnShake.Click += btnShake_Click;
             // 
             // btnSelect
             // 

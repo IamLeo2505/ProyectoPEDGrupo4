@@ -114,5 +114,12 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
             formSelectionSort.Show();
         }
+
+        private void btnShake_Click(object sender, EventArgs e)
+        {
+            FormShakerSort formShakerSort = new FormShakerSort();
+
+            formShakerSort.Show();
+        }
     }
 }
