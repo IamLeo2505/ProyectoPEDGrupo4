@@ -105,7 +105,14 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             FormHeapSort formHeapSort = new FormHeapSort();
 
             formHeapSort.Show();
-                
+
+        }
+
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            FormSelectionSort formSelectionSort = new FormSelectionSort();
+
+            formSelectionSort.Show();
         }
     }
 }

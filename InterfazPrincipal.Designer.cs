@@ -240,6 +240,7 @@
             btnSelect.TabIndex = 8;
             btnSelect.Text = "Iniciar";
             btnSelect.UseVisualStyleBackColor = false;
+            btnSelect.Click += btnSelect_Click;
             // 
             // btnHeap
             // 
