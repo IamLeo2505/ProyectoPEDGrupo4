@@ -212,6 +212,7 @@
             btnShell.TabIndex = 10;
             btnShell.Text = "Iniciar";
             btnShell.UseVisualStyleBackColor = false;
+            btnShell.Click += btnShell_Click;
             // 
             // btnShake
             // 
