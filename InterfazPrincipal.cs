@@ -1,4 +1,4 @@
-﻿using grupo1___github;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -128,13 +128,6 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             FormMarshall formMarshall = new FormMarshall();
 
             formMarshall.Show();
-        }
-
-        private void btnShell_Click(object sender, EventArgs e)
-        {
-            FormShellSort formShellSort = new FormShellSort();
-
-            formShellSort.Show();
         }
     }
 }

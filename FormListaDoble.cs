@@ -65,7 +65,7 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string code = codigo.Text;
+            string code = codigoeliminar.Text;
 
             if (!string.IsNullOrEmpty(code))
             {

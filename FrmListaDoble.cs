@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoFinalEstructuraDatosGrupo4.Modelos;
+using ProyectoFinalEstructuraDatosGrupo4;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +12,10 @@ using System.Windows.Forms;
 
 namespace ProyectoFinalEstructuraDatosGrupo4
 {
+    /*
     public partial class FrmListaDoble : Form
     {
-        ListaDobleEnlazada listaDobleProductos = new ListaDobleEnlazada();
+         ListaDobleEnlazada listaDobleProductos = new ListaDobleEnlazada();
 
         public FrmListaDoble()
         {
@@ -23,6 +26,9 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         {
 
         }
+
+
+
 
         private void btnAñadir_Click(object sender, EventArgs e)
         {
@@ -161,7 +167,90 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             dtpfechavencimiento.Value = DateTime.Now;
             txtpreciocompra.Clear();
             txtprecioventa.Clear();
+            txtbusqueda.Clear();
+            posicionA.Clear();
+            posicionE.Clear();
         }
 
-    }
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        private void btnA_Click(object sender, EventArgs e)
+        {
+            Producto nuevoProducto = new Producto
+            {
+                Codigo = txtcodigo.Text,
+                NombreProducto = textproducto.Text,
+                Descripcion = txtdescripcion.Text,
+                Categoria = cbcategoria.SelectedItem.ToString(),
+                FechaIngreso = dtpfechaingreso.Value,
+                FechaVencimiento = dtpfechavencimiento.Value,
+                PrecioCompra = decimal.Parse(txtpreciocompra.Text),
+                PrecioVenta = decimal.Parse(txtprecioventa.Text)
+            };
+
+            if (!string.IsNullOrWhiteSpace(posicionA.Text))
+            {
+                if (int.TryParse(posicionA.Text, out int posicion) && posicion > 0)
+                {
+                    ListaDobleEnlazada.InsertarEnPosicion(nuevoProducto, posicion);
+                    MessageBox.Show($"Producto añadido en la posición {posicion}.");
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, ingrese una posición válida.");
+                }
+            }
+            else if (rbtInicio.Checked)
+            {
+                ListaDobleEnlazada.InsertarAlInicio(nuevoNodo);
+                MessageBox.Show("Producto añadido al inicio.");
+            }
+            else if (rbtFinal.Checked)
+            {
+                ListaDobleEnlazada.AgregarFinal(nuevoProducto);
+                MessageBox.Show("Producto añadido al final.");
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una opción de inserción o ingrese una posición.");
+            }
+
+            // Actualizar la tabla
+            ActualizarDataGridView();
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            dgvProducto.Rows.Clear();
+            var nodos = listaDobleProductos.ObtenerTodosInverso();
+
+            foreach (var nodo in nodos)
+            {
+                dgvProducto.Rows.Add(
+                    nodo.Codigo,
+                    nodo.Nombre,
+                    nodo.Descripcion,
+                    nodo.Categoria,
+                    nodo.FechaIngreso.ToShortDateString(),
+                    nodo.FechaVencimiento.ToShortDateString(),
+                    nodo.PrecioCompra,
+                    nodo.PrecioVenta
+                );
+            }
+        }
+    }*/
 }
