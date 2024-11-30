@@ -134,5 +134,10 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             GrafoDijkstra grafoDijkstra = new GrafoDijkstra();
             grafoDijkstra.Show();
         }
+
+        private void btnSalirI_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

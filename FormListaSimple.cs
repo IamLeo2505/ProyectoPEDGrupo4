@@ -162,5 +162,10 @@ namespace ProyectoFinalEstructuraDatosGrupo4
         {
             this.Close();
         }
+
+        private void btnatras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

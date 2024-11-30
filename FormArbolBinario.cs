@@ -7,163 +7,107 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProyectoFinalEstructuraDatosGrupo4
 {
     public partial class FormArbolBinario : Form
     {
-        private List<ProductoColasCirculares> productos;
-        private ArbolBinario arbolBinario = new ArbolBinario();
+        public class Nodo
+        {
+            public int Valor;
+            public Nodo Izquierdo;
+            public Nodo Derecho;
+
+            public Nodo(int valor)
+            {
+                Valor = valor;
+                Izquierdo = null;
+                Derecho = null;
+            }
+        }
+
+        private ArbolBinario arbol;
+
         public FormArbolBinario()
         {
             InitializeComponent();
-            this.Load += FormArbolBinario_Load;
-            productos = new List<ProductoColasCirculares>();
+            arbol = new ArbolBinario();
+            txtcodigo.KeyPress += Numeros_KeyPress;
+            txtprecioventa.KeyPress += Numeros_KeyPress;
+            txtpreciocompra.KeyPress += Numeros_KeyPress;
+            txtproducto.KeyPress += Letras_KeyPress;
+            txtdescripcion.KeyPress += Letras_KeyPress;
+        }
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
-        private void FormArbolBinario_Load(object sender, EventArgs e)
+        private void Letras_KeyPress(object sender, KeyPressEventArgs e)
         {
-            cbCriterioBusqueda.Items.Add("Codigo");
-            cbCriterioBusqueda.Items.Add("Nombre");
-            cbCriterioBusqueda.Items.Add("FechaIngreso");
-            cbCriterioBusqueda.Items.Add("FechaVencimiento");
-            cbCriterioBusqueda.Items.Add("PrecioCompra");
-            cbCriterioBusqueda.Items.Add("PrecioVenta");
-
-            cbCriterioOrdenamiento.Items.Add("Codigo");
-            cbCriterioOrdenamiento.Items.Add("Nombre");
-            cbCriterioOrdenamiento.Items.Add("FechaIngreso");
-            cbCriterioOrdenamiento.Items.Add("FechaVencimiento");
-            cbCriterioOrdenamiento.Items.Add("PrecioCompra");
-            cbCriterioOrdenamiento.Items.Add("PrecioVenta");
-
-            cbcategoria.Items.Add("Bolsa 1 Lb");
-            cbcategoria.Items.Add("Bolsa 2 Lb");
-            cbcategoria.Items.Add("Paquete");
-            cbcategoria.Items.Add("Vaso");
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
-
-        private void btnAñadir_Click(object sender, EventArgs e)
+        public class ArbolBinario
         {
-            if (string.IsNullOrEmpty(txtcodigo.Text) || string.IsNullOrEmpty(txtproducto.Text) ||
-                string.IsNullOrEmpty(txtpreciocompra.Text) || string.IsNullOrEmpty(txtprecioventa.Text) ||
-                cbcategoria.SelectedItem == null)
+            public Nodo Raiz;
+
+            public ArbolBinario()
             {
-                MessageBox.Show("Por favor, complete todos los campos y seleccione una categoría.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else if (dtpfechaingreso.Value.Date >= dtpfechavencimiento.Value.Date)
-            {
-                MessageBox.Show("La fecha de vencimiento no puede ser igual o menor a la fecha de ingreso.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                Raiz = null;
             }
 
-            if (!decimal.TryParse(txtpreciocompra.Text, out decimal precioCompra) ||
-                !decimal.TryParse(txtprecioventa.Text, out decimal precioVenta))
+            public void Insertar(int valor)
             {
-                MessageBox.Show("Por favor, ingrese precios válidos.");
-                return;
+                Raiz = InsertarRecursivo(Raiz, valor);
             }
 
-            ProductoColasCirculares producto = new ProductoColasCirculares
+            private Nodo InsertarRecursivo(Nodo raiz, int valor)
             {
-                Codigo = txtcodigo.Text,
-                NombreProducto = txtproducto.Text,
-                Descripcion = txtdescripcion.Text,
-                Categoria = cbcategoria.Text,
-                FechaIngreso = dtpfechaingreso.Value,
-                FechaVencimiento = dtpfechavencimiento.Value,
-                PrecioCompra = precioCompra,
-                PrecioVenta = precioVenta
-            };
-
-            arbolBinario.Insertar(producto);
-            List<ProductoColasCirculares> productos = new List<ProductoColasCirculares>();
-            arbolBinario.RecorrerEnOrden(arbolBinario.Raiz, p => productos.Add(p));
-            MostrarProductos(productos);
-            LimpiarCampos();
-            MessageBox.Show("Producto agregado al árbol binario.");
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            if (dgvProducto.SelectedRows.Count > 0)
-            {
-                foreach (DataGridViewRow fila in dgvProducto.SelectedRows)
+                if (raiz == null)
                 {
-                    if (!fila.IsNewRow && fila.Cells["column0"].Value != null)
-                    {
-                        string codigoProducto = fila.Cells["column0"].Value.ToString();
-                        bool eliminado = arbolBinario.Eliminar(codigoProducto);
-
-                        if (eliminado)
-                        {
-                            MessageBox.Show("Producto eliminado del árbol binario.");
-                            List<ProductoColasCirculares> productos = new List<ProductoColasCirculares>();
-                            arbolBinario.RecorrerEnOrden(arbolBinario.Raiz, p => productos.Add(p));
-                            MostrarProductos(productos);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Producto no encontrado en el árbol.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
+                    return new Nodo(valor);
                 }
-            }
-            else
-            {
-                MessageBox.Show("Seleccione un producto para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
-
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            string codigo = txtcodigo.Text;
-
-            ProductoColasCirculares producto = arbolBinario.Buscar(codigo);
-
-            if (producto == null)
-            {
-                MessageBox.Show("Producto no encontrado");
-            }
-        }
-
-        private void btnAscendente_Click(object sender, EventArgs e)
-        {
-            if (arbolBinario.Raiz == null)
-            {
-                MessageBox.Show("El árbol binario está vacío.");
-                return;
-            }
-            else
-            {
-
-                List<ProductoColasCirculares> productos = new List<ProductoColasCirculares>();
-                arbolBinario.RecorrerEnOrden(arbolBinario.Raiz, producto =>
+                if (valor < raiz.Valor)
                 {
-                    productos.Add(producto);
-                });
+                    raiz.Izquierdo = InsertarRecursivo(raiz.Izquierdo, valor);
+                }
+                else if (valor > raiz.Valor)
+                {
+                    raiz.Derecho = InsertarRecursivo(raiz.Derecho, valor);
+                }
 
-                MostrarProductos(productos);
+                return raiz;
             }
-        }
 
-        private void MostrarProductos(List<ProductoColasCirculares> productos)
-        {
-            dgvProducto.Rows.Clear();
-            foreach (var producto in productos)
+
+            public void Dibujar(Graphics g, Nodo nodo, int x, int y, int offset)
             {
-                dgvProducto.Rows.Add(
-                    producto.Codigo,
-                    producto.NombreProducto,
-                    producto.Descripcion,
-                    producto.Categoria,
-                    producto.FechaIngreso.ToShortDateString(),
-                    producto.FechaVencimiento.ToShortDateString(),
-                    producto.PrecioCompra,
-                    producto.PrecioVenta);
+
+                if (nodo == null) return;
+
+
+                g.FillEllipse(Brushes.LightBlue, x, y, 30, 30);
+                g.DrawString(nodo.Valor.ToString(), new Font("Arial", 10), Brushes.Black, x + 10, y + 10);
+
+
+                if (nodo.Izquierdo != null)
+                {
+                    g.DrawLine(Pens.Black, x + 15, y + 30, x - offset + 15, y + 60);
+                    Dibujar(g, nodo.Izquierdo, x - offset, y + 60, offset / 2);
+                }
+                if (nodo.Derecho != null)
+                {
+                    g.DrawLine(Pens.Black, x + 15, y + 30, x + offset + 15, y + 60);
+                    Dibujar(g, nodo.Derecho, x + offset, y + 60, offset / 2);
+                }
             }
         }
 
@@ -179,29 +123,50 @@ namespace ProyectoFinalEstructuraDatosGrupo4
             dtpfechavencimiento.Value = DateTime.Now;
         }
 
-        private void btnDescendente_Click(object sender, EventArgs e)
-        {
-            if (arbolBinario.Raiz == null)
-            {
-                MessageBox.Show("El árbol binario está vacío.");
-                return;
-            }
-            else
-            {
-                List<ProductoColasCirculares> productos = new List<ProductoColasCirculares>();
-                arbolBinario.RecorrerEnOrden(arbolBinario.Raiz, producto =>
-                {
-                    productos.Add(producto);
-                });
 
-                productos.Reverse();
-                MostrarProductos(productos);
-            }
+        private void btnAñadir_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.White;
+            panel1.Invalidate();
+            arbol = new ArbolBinario();
+
+
+            InsertarValores();
+
+
+            panel1.Invalidate();
+
+        }
+        private void InsertarValores()
+        {
+            if (int.TryParse(txtcodigo.Text, out int val1)) arbol.Insertar(val1);
+            if (int.TryParse(txtproducto.Text, out int val2)) arbol.Insertar(val2);
+            if (int.TryParse(txtdescripcion.Text, out int val4)) arbol.Insertar(val4);
+            if (int.TryParse(txtpreciocompra.Text, out int val7)) arbol.Insertar(val7);
+            if (int.TryParse(txtprecioventa.Text, out int val8)) arbol.Insertar(val8);
+            if (int.TryParse(cbcategoria.Text, out int val3)) arbol.Insertar(val3);
+
+
+            if (int.TryParse(dtpfechaingreso.Value.Year.ToString(), out int valDate1))
+                arbol.Insertar(valDate1);
+            if (int.TryParse(dtpfechavencimiento.Value.Year.ToString(), out int valDate2))
+                arbol.Insertar(valDate2);
         }
 
 
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            arbol.Dibujar(e.Graphics, arbol.Raiz, panel1.Width / 2, 20, 40);
+
+        }
+
         private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        private void btnatras_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -77,6 +77,7 @@
             panel8 = new Panel();
             panel9 = new Panel();
             panel10 = new Panel();
+            btnSalirI = new Button();
             panel5.SuspendLayout();
             panel2.SuspendLayout();
             panel4.SuspendLayout();
@@ -184,7 +185,7 @@
             panel2.Controls.Add(label6);
             panel2.Location = new Point(422, 109);
             panel2.Name = "panel2";
-            panel2.Size = new Size(788, 409);
+            panel2.Size = new Size(880, 409);
             panel2.TabIndex = 7;
             // 
             // label20
@@ -193,7 +194,7 @@
             label20.AutoSize = true;
             label20.Font = new Font("Perpetua", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.Black;
-            label20.Location = new Point(214, 7);
+            label20.Location = new Point(260, 7);
             label20.Name = "label20";
             label20.Size = new Size(385, 39);
             label20.TabIndex = 9;
@@ -205,7 +206,7 @@
             btnShell.BackColor = Color.DarkCyan;
             btnShell.FlatStyle = FlatStyle.Flat;
             btnShell.ForeColor = SystemColors.ActiveCaptionText;
-            btnShell.Location = new Point(551, 351);
+            btnShell.Location = new Point(643, 351);
             btnShell.Name = "btnShell";
             btnShell.Size = new Size(86, 31);
             btnShell.TabIndex = 10;
@@ -218,7 +219,7 @@
             btnShake.BackColor = Color.DarkCyan;
             btnShake.FlatStyle = FlatStyle.Flat;
             btnShake.ForeColor = SystemColors.ActiveCaptionText;
-            btnShake.Location = new Point(551, 239);
+            btnShake.Location = new Point(643, 239);
             btnShake.Name = "btnShake";
             btnShake.Size = new Size(86, 31);
             btnShake.TabIndex = 9;
@@ -232,7 +233,7 @@
             btnSelect.BackColor = Color.DarkCyan;
             btnSelect.FlatStyle = FlatStyle.Flat;
             btnSelect.ForeColor = SystemColors.ActiveCaptionText;
-            btnSelect.Location = new Point(551, 120);
+            btnSelect.Location = new Point(643, 120);
             btnSelect.Name = "btnSelect";
             btnSelect.Size = new Size(86, 31);
             btnSelect.TabIndex = 8;
@@ -271,7 +272,7 @@
             label11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label11.AutoSize = true;
             label11.Font = new Font("Perpetua", 18F);
-            label11.Location = new Point(462, 293);
+            label11.Location = new Point(554, 293);
             label11.Name = "label11";
             label11.Size = new Size(239, 35);
             label11.TabIndex = 3;
@@ -282,7 +283,7 @@
             label10.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label10.AutoSize = true;
             label10.Font = new Font("Perpetua", 18F);
-            label10.Location = new Point(462, 68);
+            label10.Location = new Point(554, 68);
             label10.Name = "label10";
             label10.Size = new Size(287, 35);
             label10.TabIndex = 3;
@@ -313,7 +314,7 @@
             label9.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label9.AutoSize = true;
             label9.Font = new Font("Perpetua", 18F);
-            label9.Location = new Point(462, 181);
+            label9.Location = new Point(554, 181);
             label9.Name = "label9";
             label9.Size = new Size(249, 35);
             label9.TabIndex = 3;
@@ -419,7 +420,7 @@
             label13.Anchor = AnchorStyles.None;
             label13.AutoSize = true;
             label13.Font = new Font("Perpetua", 20F);
-            label13.Location = new Point(445, 27);
+            label13.Location = new Point(491, 39);
             label13.Name = "label13";
             label13.Size = new Size(490, 39);
             label13.TabIndex = 9;
@@ -538,7 +539,7 @@
             panel6.Controls.Add(label17);
             panel6.Location = new Point(762, 544);
             panel6.Name = "panel6";
-            panel6.Size = new Size(447, 377);
+            panel6.Size = new Size(539, 377);
             panel6.TabIndex = 5;
             // 
             // label23
@@ -547,7 +548,7 @@
             label23.AutoSize = true;
             label23.Font = new Font("Perpetua", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label23.ForeColor = Color.Black;
-            label23.Location = new Point(89, 9);
+            label23.Location = new Point(135, 9);
             label23.Name = "label23";
             label23.Size = new Size(284, 39);
             label23.TabIndex = 14;
@@ -559,7 +560,7 @@
             button5.BackColor = Color.DarkCyan;
             button5.FlatStyle = FlatStyle.Flat;
             button5.ForeColor = SystemColors.ActiveCaptionText;
-            button5.Location = new Point(169, 325);
+            button5.Location = new Point(215, 325);
             button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
             button5.Size = new Size(86, 31);
@@ -574,7 +575,7 @@
             button4.BackColor = Color.DarkCyan;
             button4.FlatStyle = FlatStyle.Flat;
             button4.ForeColor = SystemColors.ActiveCaptionText;
-            button4.Location = new Point(169, 228);
+            button4.Location = new Point(215, 228);
             button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
             button4.Size = new Size(86, 31);
@@ -589,7 +590,7 @@
             button3.BackColor = Color.DarkCyan;
             button3.FlatStyle = FlatStyle.Flat;
             button3.ForeColor = SystemColors.ActiveCaptionText;
-            button3.Location = new Point(169, 133);
+            button3.Location = new Point(215, 133);
             button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
             button3.Size = new Size(86, 31);
@@ -603,7 +604,7 @@
             label16.Anchor = AnchorStyles.None;
             label16.AutoSize = true;
             label16.Font = new Font("Perpetua", 18F);
-            label16.Location = new Point(46, 77);
+            label16.Location = new Point(92, 77);
             label16.Name = "label16";
             label16.Size = new Size(376, 35);
             label16.TabIndex = 3;
@@ -614,7 +615,7 @@
             label18.Anchor = AnchorStyles.None;
             label18.AutoSize = true;
             label18.Font = new Font("Perpetua", 18F);
-            label18.Location = new Point(52, 279);
+            label18.Location = new Point(98, 279);
             label18.Name = "label18";
             label18.Size = new Size(377, 35);
             label18.TabIndex = 6;
@@ -626,7 +627,7 @@
             label17.Anchor = AnchorStyles.None;
             label17.AutoSize = true;
             label17.Font = new Font("Perpetua", 18F);
-            label17.Location = new Point(46, 181);
+            label17.Location = new Point(92, 181);
             label17.Name = "label17";
             label17.Size = new Size(361, 35);
             label17.TabIndex = 4;
@@ -654,7 +655,7 @@
             panel8.Location = new Point(422, 159);
             panel8.Margin = new Padding(3, 4, 3, 4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(788, 13);
+            panel8.Size = new Size(880, 13);
             panel8.TabIndex = 11;
             // 
             // panel9
@@ -671,15 +672,31 @@
             panel10.Location = new Point(761, 599);
             panel10.Margin = new Padding(3, 4, 3, 4);
             panel10.Name = "panel10";
-            panel10.Size = new Size(448, 15);
+            panel10.Size = new Size(540, 15);
             panel10.TabIndex = 12;
+            // 
+            // btnSalirI
+            // 
+            btnSalirI.Anchor = AnchorStyles.None;
+            btnSalirI.BackColor = Color.DarkCyan;
+            btnSalirI.FlatStyle = FlatStyle.Flat;
+            btnSalirI.ForeColor = SystemColors.ActiveCaptionText;
+            btnSalirI.Location = new Point(1216, 928);
+            btnSalirI.Margin = new Padding(3, 4, 3, 4);
+            btnSalirI.Name = "btnSalirI";
+            btnSalirI.Size = new Size(86, 31);
+            btnSalirI.TabIndex = 15;
+            btnSalirI.Text = "Salir";
+            btnSalirI.UseVisualStyleBackColor = false;
+            btnSalirI.Click += btnSalirI_Click;
             // 
             // InterfazPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkTurquoise;
-            ClientSize = new Size(1238, 947);
+            ClientSize = new Size(1330, 971);
+            Controls.Add(btnSalirI);
             Controls.Add(panel10);
             Controls.Add(panel9);
             Controls.Add(panel8);
@@ -760,5 +777,6 @@
         private Panel panel9;
         private Panel panel10;
         private Label label23;
+        private Button btnSalirI;
     }
 }
