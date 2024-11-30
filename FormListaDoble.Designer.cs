@@ -70,11 +70,6 @@
             compra = new TextBox();
             label18 = new Label();
             label19 = new Label();
-            groupBox4 = new GroupBox();
-            label20 = new Label();
-            criterio = new ComboBox();
-            buscar = new Button();
-            busqueda = new TextBox();
             dataGridView1 = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
@@ -90,7 +85,6 @@
             ((System.ComponentModel.ISupportInitialize)dgvProducto).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
-            groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -430,7 +424,7 @@
             // 
             // añadir
             // 
-            añadir.Location = new Point(1112, 340);
+            añadir.Location = new Point(1123, 268);
             añadir.Margin = new Padding(3, 4, 3, 4);
             añadir.Name = "añadir";
             añadir.Size = new Size(86, 31);
@@ -578,62 +572,6 @@
             label19.TabIndex = 115;
             label19.Text = "Precio de Venta";
             // 
-            // groupBox4
-            // 
-            groupBox4.Controls.Add(label20);
-            groupBox4.Controls.Add(criterio);
-            groupBox4.Controls.Add(buscar);
-            groupBox4.Controls.Add(busqueda);
-            groupBox4.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            groupBox4.Location = new Point(1112, 201);
-            groupBox4.Margin = new Padding(3, 4, 3, 4);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Padding = new Padding(3, 4, 3, 4);
-            groupBox4.Size = new Size(530, 98);
-            groupBox4.TabIndex = 119;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Búsqueda";
-            groupBox4.Enter += groupBox4_Enter;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Perpetua", 12F);
-            label20.Location = new Point(22, 26);
-            label20.Name = "label20";
-            label20.Size = new Size(69, 23);
-            label20.TabIndex = 121;
-            label20.Text = "Criterio";
-            // 
-            // criterio
-            // 
-            criterio.DropDownStyle = ComboBoxStyle.DropDownList;
-            criterio.FormattingEnabled = true;
-            criterio.Items.AddRange(new object[] { "Código", "Nombre", "Descripción", "Categoría", "Fecha de Ingreso", "Fecha de Vencimiento" });
-            criterio.Location = new Point(22, 52);
-            criterio.Name = "criterio";
-            criterio.Size = new Size(149, 31);
-            criterio.TabIndex = 120;
-            // 
-            // buscar
-            // 
-            buscar.Location = new Point(411, 49);
-            buscar.Margin = new Padding(3, 4, 3, 4);
-            buscar.Name = "buscar";
-            buscar.Size = new Size(86, 31);
-            buscar.TabIndex = 102;
-            buscar.Text = "Buscar";
-            buscar.UseVisualStyleBackColor = true;
-            buscar.Click += button2_Click;
-            // 
-            // busqueda
-            // 
-            busqueda.Location = new Point(177, 52);
-            busqueda.Margin = new Padding(3, 4, 3, 4);
-            busqueda.Name = "busqueda";
-            busqueda.Size = new Size(212, 30);
-            busqueda.TabIndex = 0;
-            // 
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
@@ -696,7 +634,7 @@
             // 
             // eliminar
             // 
-            eliminar.Location = new Point(1415, 340);
+            eliminar.Location = new Point(1414, 268);
             eliminar.Margin = new Padding(3, 4, 3, 4);
             eliminar.Name = "eliminar";
             eliminar.Size = new Size(86, 31);
@@ -718,7 +656,7 @@
             // 
             // codigoeliminar
             // 
-            codigoeliminar.Location = new Point(1245, 344);
+            codigoeliminar.Location = new Point(1230, 268);
             codigoeliminar.Name = "codigoeliminar";
             codigoeliminar.PlaceholderText = "Eliminar por Código";
             codigoeliminar.Size = new Size(164, 27);
@@ -733,7 +671,6 @@
             Controls.Add(button4);
             Controls.Add(eliminar);
             Controls.Add(dataGridView1);
-            Controls.Add(groupBox4);
             Controls.Add(venta);
             Controls.Add(compra);
             Controls.Add(label18);
@@ -758,8 +695,6 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -822,11 +757,6 @@
         private TextBox compra;
         private Label label18;
         private Label label19;
-        private GroupBox groupBox4;
-        private Button buscar;
-        private TextBox busqueda;
-        private Label label20;
-        private ComboBox criterio;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
