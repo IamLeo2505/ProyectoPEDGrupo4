@@ -86,6 +86,7 @@
             dataGridViewTextBoxColumn8 = new DataGridViewTextBoxColumn();
             eliminar = new Button();
             button4 = new Button();
+            codigoeliminar = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvProducto).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -695,7 +696,7 @@
             // 
             // eliminar
             // 
-            eliminar.Location = new Point(1225, 340);
+            eliminar.Location = new Point(1415, 340);
             eliminar.Margin = new Padding(3, 4, 3, 4);
             eliminar.Name = "eliminar";
             eliminar.Size = new Size(86, 31);
@@ -715,9 +716,19 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // codigoeliminar
+            // 
+            codigoeliminar.Location = new Point(1245, 344);
+            codigoeliminar.Name = "codigoeliminar";
+            codigoeliminar.PlaceholderText = "Eliminar por Código";
+            codigoeliminar.Size = new Size(164, 27);
+            codigoeliminar.TabIndex = 122;
+            codigoeliminar.TextAlign = HorizontalAlignment.Center;
+            // 
             // FormListaDoble
             // 
             ClientSize = new Size(1643, 917);
+            Controls.Add(codigoeliminar);
             Controls.Add(añadir);
             Controls.Add(button4);
             Controls.Add(eliminar);
@@ -827,5 +838,6 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private Button eliminar;
         private Button button4;
+        private TextBox codigoeliminar;
     }
 }
