@@ -129,5 +129,12 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
             formMarshall.Show();
         }
+
+        private void btnShell_Click(object sender, EventArgs e)
+        {
+            FormShellSort formShellSort = new FormShellSort();
+
+            formShellSort.Show();
+        }
     }
 }
