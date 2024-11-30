@@ -1,4 +1,5 @@
-﻿using System;
+﻿using grupo1___github;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,9 +69,9 @@ namespace ProyectoFinalEstructuraDatosGrupo4
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormGrafoAlgoritmoFloyd formGrafoAlgoritmoFloyd = new FormGrafoAlgoritmoFloyd();
+            FormFloyd formFloyd = new FormFloyd();
 
-            formGrafoAlgoritmoFloyd.Show();
+            formFloyd.Show();
         }
 
         private void InterfazPrincipal_Load(object sender, EventArgs e)
