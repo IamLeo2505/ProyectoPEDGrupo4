@@ -566,6 +566,7 @@
             button5.TabIndex = 9;
             button5.Text = "Iniciar";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
